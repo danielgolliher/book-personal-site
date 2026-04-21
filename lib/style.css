@@ -173,7 +173,13 @@ a.restock:hover {
 /* ############################# mobile ############################# */
 
 @media screen and (max-width: 860px) {
-  body, li:before { font-size: 26px; }
-  h2, h3 { font-size: 26px; }
+  body { font-size: 36px; line-height: 1.4; }
+  h2 { font-size: 40px; }
+  section h2 { font-size: 34px; }
+  h3 { font-size: 32px; }
+  ul.contact-list li { gap: 18px; margin-bottom: 16px; }
+  ul.contact-list .icon { width: 32px; height: 32px; }
+  ul.writing-list li { margin-bottom: 16px; }
+  ul.writing-list .icon { width: 28px; height: 28px; vertical-align: -7px; margin-right: 12px; }
   a.restock { width: 48px; height: 34px; font-size: 22px; line-height: 30px; }
 }

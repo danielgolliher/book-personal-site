@@ -152,8 +152,8 @@ BOOK_H = 32
 BOOK_GAP = 2
 # Listed bottom → top of the pile
 menu_stack = [
-    ("ABOUT",   "#about",   "#6b2d2d", 180),
-    ("WRITING", "#writing", "#2d4a2d", 200),
+    ("ABOUT",   "/about",   "#6b2d2d", 180),
+    ("WRITING", "/writing", "#2d4a2d", 200),
     ("HOME",    "/",        "#1f3a5f", 170),
 ]
 # Tiny horizontal offset per book so the pile looks slightly uneven.
@@ -166,7 +166,7 @@ for i, (label, href, color, bw) in enumerate(menu_stack):
     y_bot = STACK_BOTTOM - i * (BOOK_H + BOOK_GAP)
     y_top = y_bot - BOOK_H
 
-    out.append(f'<a href="{href}" class="menu-book">')
+    out.append(f'<a href="{href}" target="_top" class="menu-book">')
     out.append(f'  <g class="book menu book-g{10+i}">')
     # spine main
     out.append(f'    <rect class="spine" x="{bx1:.1f}" y="{y_top:.1f}" width="{bw}" height="{BOOK_H}" fill="{color}"/>')

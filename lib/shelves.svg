@@ -506,7 +506,7 @@
   <text x="985" y="553.0" text-anchor="middle" font-family="IM Fell English, serif" font-size="42" font-weight="400" fill="#2f4a35">Daniel Golliher</text>
   <text x="985" y="585.0" text-anchor="middle" font-family="IM Fell English, serif" font-style="italic" font-size="15" fill="#5a5040">(how to say my last name: &#8220;gol-yer&#8221;)</text>
 </g>
-<a href="#about" class="menu-book">
+<a href="/about" target="_top" class="menu-book">
   <g class="book menu book-g10">
     <rect class="spine" x="1160.0" y="608.0" width="180" height="32" fill="#6b2d2d"/>
     <rect x="1160.0" y="610.0" width="3" height="28" fill="#e8d9b0" opacity="0.8"/>
@@ -516,7 +516,7 @@
     <text x="1250.0" y="629.5" text-anchor="middle" font-family="IM Fell English SC, IM Fell English, serif" font-size="16" font-weight="400" letter-spacing="4" fill="#f0e0b8">ABOUT</text>
   </g>
 </a>
-<a href="#writing" class="menu-book">
+<a href="/writing" target="_top" class="menu-book">
   <g class="book menu book-g11">
     <rect class="spine" x="1156.0" y="574.0" width="200" height="32" fill="#2d4a2d"/>
     <rect x="1156.0" y="576.0" width="3" height="28" fill="#e8d9b0" opacity="0.8"/>
@@ -526,7 +526,7 @@
     <text x="1256.0" y="595.5" text-anchor="middle" font-family="IM Fell English SC, IM Fell English, serif" font-size="16" font-weight="400" letter-spacing="4" fill="#f0e0b8">WRITING</text>
   </g>
 </a>
-<a href="/" class="menu-book">
+<a href="/" target="_top" class="menu-book">
   <g class="book menu book-g12">
     <rect class="spine" x="1161.0" y="540.0" width="170" height="32" fill="#1f3a5f"/>
     <rect x="1161.0" y="542.0" width="3" height="28" fill="#e8d9b0" opacity="0.8"/>
