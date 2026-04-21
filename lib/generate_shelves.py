@@ -725,3 +725,26 @@ for book in activated_books:
     with open(os.path.join(page_dir, "index.html"), "w") as f:
         f.write(page)
     print(f"wrote books/{slug}/index.html")
+
+# Rewrite the BOOKS block in index.html with the current sorted list.
+INDEX_PATH = os.path.join(ROOT, "index.html")
+if os.path.exists(INDEX_PATH) and activated_books:
+    sorted_books = sorted(activated_books, key=lambda b: b["title"].lower())
+    items = "\n".join(
+        f'    <li><a href="/books/{b["slug"]}/">{b["title"]}</a></li>'
+        for b in sorted_books
+    )
+    replacement = f"<!-- BOOKS:START -->\n{items}\n    <!-- BOOKS:END -->"
+    with open(INDEX_PATH) as f:
+        html = f.read()
+    new_html = re.sub(
+        r'<!-- BOOKS:START -->.*?<!-- BOOKS:END -->',
+        replacement,
+        html,
+        count=1,
+        flags=re.DOTALL,
+    )
+    if new_html != html:
+        with open(INDEX_PATH, "w") as f:
+            f.write(new_html)
+        print(f"updated BOOKS block in index.html ({len(sorted_books)} books)")

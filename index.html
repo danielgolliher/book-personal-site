@@ -134,5 +134,34 @@
   </ul>
 </section>
 
+<section id="library">
+  <h2>Explore this site's library above</h2>
+  <p>
+    You can click on the books with titles in the site's header. Each will take
+    you to a short review of why that book is important to me. I&rsquo;ll add
+    more of these over time. If you want a list of the books, just click
+    <button type="button" class="library-toggle" aria-expanded="false" aria-controls="library-list">here</button>.
+  </p>
+  <ul id="library-list" class="library-list" hidden>
+    <!-- BOOKS:START -->
+    <li><a href="/books/gone-with-the-wind/">Gone with the Wind</a></li>
+    <!-- BOOKS:END -->
+  </ul>
+</section>
+
+<script>
+  (function() {
+    var btn = document.querySelector('.library-toggle');
+    if (!btn) return;
+    btn.addEventListener('click', function() {
+      var list = document.getElementById('library-list');
+      if (!list) return;
+      var hidden = list.hasAttribute('hidden');
+      if (hidden) list.removeAttribute('hidden'); else list.setAttribute('hidden', '');
+      btn.setAttribute('aria-expanded', String(hidden));
+    });
+  })();
+</script>
+
 </body>
 </html>
