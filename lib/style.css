@@ -138,6 +138,27 @@ ul.library-list {
 }
 ul.library-list li { margin-bottom: 4px; }
 
+/* Decorative end-of-page flourish */
+footer.flourish {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 3em 0 2em;
+  padding: 1.5em 0 0;
+  border-top: 1px solid rgba(46, 34, 24, 0.18);
+}
+footer.flourish .flourish-item { flex-shrink: 0; }
+footer.flourish .flourish-boroughs {
+  /* PNG is black-on-white — blend the white into the cream page */
+  mix-blend-mode: multiply;
+  opacity: 0.9;
+}
+footer.flourish .flourish-flag {
+  /* subtle outline to define the flag's white stripes against cream page */
+  outline: 1px solid rgba(46, 34, 24, 0.18);
+}
+
 ul.contact-list li {
   display: flex;
   align-items: center;
