@@ -61,54 +61,105 @@ def _inline_md(text):
 
 
 def md_to_html(md):
-    """Very small markdown → HTML: headings, paragraphs, unordered lists,
-    horizontal rules, plus inline bold/italic/links/code."""
+    """Small markdown → HTML: headings, paragraphs, unordered lists,
+    horizontal rules, blockquotes, plus inline bold/italic/links/code."""
     out = []
     lines = md.splitlines()
-    in_list = False
+    state = {"in_list": False, "in_quote": False}
     para = []
+    quote_para = []
 
     def flush_para():
         if para:
             out.append("<p>" + _inline_md(" ".join(para)) + "</p>")
             para.clear()
 
+    def flush_quote_para():
+        if quote_para:
+            out.append("  <p>" + _inline_md(" ".join(quote_para)) + "</p>")
+            quote_para.clear()
+
+    def close_list():
+        if state["in_list"]:
+            out.append("</ul>")
+            state["in_list"] = False
+
+    def close_quote():
+        if state["in_quote"]:
+            flush_quote_para()
+            out.append("</blockquote>")
+            state["in_quote"] = False
+
     for line in lines:
         s = line.rstrip()
-        if not s.strip():
+        stripped = s.strip()
+
+        # Blockquote line (> text, or just > for paragraph break within quote)
+        mq = re.match(r'^>\s?(.*)$', s)
+        if mq:
             flush_para()
-            if in_list:
-                out.append("</ul>")
-                in_list = False
+            close_list()
+            if not state["in_quote"]:
+                out.append("<blockquote>")
+                state["in_quote"] = True
+            content = mq.group(1)
+            if content.strip():
+                quote_para.append(content.strip())
+            else:
+                flush_quote_para()
             continue
-        if s.strip() == "---":
+
+        # Leaving blockquote (non-quote, non-empty line)
+        if state["in_quote"] and stripped:
+            close_quote()
+
+        # Blank line
+        if not stripped:
             flush_para()
-            if in_list:
-                out.append("</ul>")
-                in_list = False
+            flush_quote_para()
+            close_list()
+            # allow blank lines inside quote handled above; otherwise end quote
+            if state["in_quote"]:
+                close_quote()
+            continue
+
+        # Horizontal rule
+        if stripped == "---":
+            flush_para()
+            close_list()
+            close_quote()
             out.append("<hr>")
             continue
+
+        # Heading
         m = re.match(r'^(#{1,6})\s+(.+)$', s)
         if m:
             flush_para()
-            if in_list:
-                out.append("</ul>")
-                in_list = False
+            close_list()
+            close_quote()
             lvl = len(m.group(1))
             out.append(f"<h{lvl}>{_inline_md(m.group(2))}</h{lvl}>")
             continue
+
+        # List item
         m = re.match(r'^[-*]\s+(.+)$', s)
         if m:
             flush_para()
-            if not in_list:
+            close_quote()
+            if not state["in_list"]:
                 out.append("<ul>")
-                in_list = True
+                state["in_list"] = True
             out.append(f"<li>{_inline_md(m.group(1))}</li>")
             continue
-        para.append(s.strip())
+
+        # Regular paragraph line
+        close_list()
+        para.append(stripped)
+
     flush_para()
-    if in_list:
-        out.append("</ul>")
+    flush_quote_para()
+    close_list()
+    close_quote()
     return "\n".join(out)
 
 
@@ -227,12 +278,18 @@ activated_books = load_books()
 reservations = {0: [], 1: [], 2: []}  # shelf_idx -> list of (x, book_dict)
 BUFFER = 14  # min gap between reserved and surrounding books
 
+# Only place activated books inside the range that is visible on mobile too
+# (the SVG is clipped to roughly 608–1381 SVG units at 850px viewport after
+# the 1.1× mobile zoom). We use a small inset on top of that for safety.
+VISIBLE_X1 = 620
+VISIBLE_X2 = 1370
+
 for book in activated_books:
     s_idx = book["shelf"]
     bw = book["width"]
     placed = False
     for _attempt in range(300):
-        x_try = random.randint(BOOK_LEFT + 20, BOOK_RIGHT - bw - 20)
+        x_try = random.randint(VISIBLE_X1, VISIBLE_X2 - bw)
         # Skip the cutout (bottom-shelf niche).
         if s_idx == CUTOUT_SHELF and x_try < CUTOUT_X2 + BUFFER and x_try + bw > CUTOUT_X1 - BUFFER:
             continue
@@ -248,7 +305,12 @@ for book in activated_books:
             placed = True
             break
     if not placed:
-        print(f"WARNING: no room for activated book {book['slug']!r} on shelf {s_idx}", file=sys.stderr)
+        if s_idx == CUTOUT_SHELF:
+            print(f"WARNING: {book['slug']!r} set to shelf=bottom, but the mobile-"
+                  f"visible bottom shelf is occupied by the nameplate niche. "
+                  f"Move it to shelf=middle in the frontmatter.", file=sys.stderr)
+        else:
+            print(f"WARNING: no room for activated book {book['slug']!r} on shelf {s_idx}", file=sys.stderr)
 
 for s in reservations:
     reservations[s].sort(key=lambda r: r[0])

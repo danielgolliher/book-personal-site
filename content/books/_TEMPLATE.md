@@ -30,7 +30,10 @@ More paragraphs flow naturally.
   spine in vertical small caps.
 - **slug**: the URL segment. Will become `/books/<slug>/` on the site. Use
   lowercase-with-dashes.
-- **shelf**: `middle` or `bottom` (top shelf is reserved for filler books).
+- **shelf**: `middle` recommended. (`bottom` is technically allowed, but the
+  mobile-visible portion of the bottom shelf is occupied by the nameplate
+  niche, so a `bottom` book is only visible on desktop. `top` is reserved
+  for filler books and is not allowed.)
 - **color**: any CSS hex color. Library-palette options:
     - `#6b2d2d` burgundy
     - `#8b3a3a` oxblood

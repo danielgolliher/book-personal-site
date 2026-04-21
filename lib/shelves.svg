@@ -24,188 +24,188 @@
 <rect x="96" y="640" width="1797" height="10" fill="var(--shelf, #6b4a30)"/>
 <rect x="96" y="650" width="1797" height="3" fill="rgba(0,0,0,0.18)"/>
 <g class="book shelf-0 book-g1">
-<rect x="124.4" y="108" width="53" height="132" fill="#2d4a2d"/>
-<rect x="125.4" y="108" width="51" height="2.5" fill="#e8d9b0"/>
-<rect x="124.4" y="131" width="53" height="14" fill="#f0e0b8" opacity="0.55"/>
+<rect x="141.0" y="108" width="53" height="132" fill="#2d4a2d"/>
+<rect x="142.0" y="108" width="51" height="2.5" fill="#e8d9b0"/>
+<rect x="141.0" y="131" width="53" height="14" fill="#f0e0b8" opacity="0.55"/>
 </g>
 <g class="book shelf-0 book-g3">
-<rect x="177.5" y="53" width="32" height="187" fill="#1f3a5f"/>
-<rect x="178.5" y="53" width="30" height="2.5" fill="#e8d9b0"/>
+<rect x="194.1" y="53" width="32" height="187" fill="#1f3a5f"/>
+<rect x="195.1" y="53" width="30" height="2.5" fill="#e8d9b0"/>
 </g>
 <g class="book shelf-0 book-g1">
-<rect x="211.3" y="38" width="44" height="202" fill="#a85c3a"/>
-<rect x="212.3" y="38" width="42" height="2.5" fill="#e8d9b0"/>
-<rect x="211.3" y="66" width="44" height="7" fill="#f0e0b8" opacity="0.55"/>
+<rect x="227.9" y="38" width="44" height="202" fill="#a85c3a"/>
+<rect x="228.9" y="38" width="42" height="2.5" fill="#e8d9b0"/>
+<rect x="227.9" y="66" width="44" height="7" fill="#f0e0b8" opacity="0.55"/>
 </g>
 <g class="book shelf-0 book-g0">
-<rect x="255.7" y="91" width="51" height="149" fill="#2d4a2d"/>
-<rect x="256.7" y="91" width="49" height="2.5" fill="#e8d9b0"/>
-<rect x="255.7" y="123" width="51" height="7" fill="#f0e0b8" opacity="0.55"/>
-<rect x="255.7" y="99" width="51" height="2" fill="#c8a85a" opacity="0.8"/>
+<rect x="272.3" y="91" width="51" height="149" fill="#2d4a2d"/>
+<rect x="273.3" y="91" width="49" height="2.5" fill="#e8d9b0"/>
+<rect x="272.3" y="123" width="51" height="7" fill="#f0e0b8" opacity="0.55"/>
+<rect x="272.3" y="99" width="51" height="2" fill="#c8a85a" opacity="0.8"/>
 </g>
 <g class="book shelf-0 book-g3">
-<rect x="308.2" y="114" width="53" height="126" fill="#c8a85a"/>
-<rect x="309.2" y="114" width="51" height="2.5" fill="#e8d9b0"/>
-<rect x="308.2" y="136" width="53" height="9" fill="#111" opacity="0.55"/>
+<rect x="324.8" y="114" width="53" height="126" fill="#c8a85a"/>
+<rect x="325.8" y="114" width="51" height="2.5" fill="#e8d9b0"/>
+<rect x="324.8" y="136" width="53" height="9" fill="#111" opacity="0.55"/>
 </g>
 <g class="book shelf-0 book-g1">
-<rect x="364.0" y="101" width="26" height="139" fill="#8b3a3a"/>
-<rect x="365.0" y="101" width="24" height="2.5" fill="#e8d9b0"/>
-<rect x="364.0" y="139" width="26" height="7" fill="#f0e0b8" opacity="0.55"/>
+<rect x="380.6" y="101" width="26" height="139" fill="#8b3a3a"/>
+<rect x="381.6" y="101" width="24" height="2.5" fill="#e8d9b0"/>
+<rect x="380.6" y="139" width="26" height="7" fill="#f0e0b8" opacity="0.55"/>
 </g>
 <g class="book shelf-0 book-g1">
-<rect x="391.6" y="43" width="36" height="197" fill="#8b3a3a"/>
-<rect x="392.6" y="43" width="34" height="2.5" fill="#e8d9b0"/>
-<rect x="391.6" y="76" width="36" height="10" fill="#f0e0b8" opacity="0.55"/>
-<line x1="394.6" y1="220" x2="424.6" y2="220" stroke="#000" stroke-width="0.5" opacity="0.3"/>
+<rect x="408.2" y="43" width="36" height="197" fill="#8b3a3a"/>
+<rect x="409.2" y="43" width="34" height="2.5" fill="#e8d9b0"/>
+<rect x="408.2" y="76" width="36" height="10" fill="#f0e0b8" opacity="0.55"/>
+<line x1="411.2" y1="220" x2="441.2" y2="220" stroke="#000" stroke-width="0.5" opacity="0.3"/>
 </g>
 <g class="book shelf-0 book-g4">
-<rect x="429.7" y="71" width="25" height="169" fill="#c8a85a"/>
-<rect x="430.7" y="71" width="23" height="2.5" fill="#e8d9b0"/>
-<rect x="429.7" y="109" width="25" height="13" fill="#111" opacity="0.55"/>
+<rect x="446.3" y="71" width="25" height="169" fill="#c8a85a"/>
+<rect x="447.3" y="71" width="23" height="2.5" fill="#e8d9b0"/>
+<rect x="446.3" y="109" width="25" height="13" fill="#111" opacity="0.55"/>
 </g>
 <g class="book shelf-0 book-g5">
-<rect x="457.0" y="119" width="50" height="121" fill="#6b2d2d"/>
-<rect x="458.0" y="119" width="48" height="2.5" fill="#e8d9b0"/>
-<line x1="460.0" y1="220" x2="504.0" y2="220" stroke="#000" stroke-width="0.5" opacity="0.3"/>
+<rect x="473.6" y="119" width="50" height="121" fill="#6b2d2d"/>
+<rect x="474.6" y="119" width="48" height="2.5" fill="#e8d9b0"/>
+<line x1="476.6" y1="220" x2="520.6" y2="220" stroke="#000" stroke-width="0.5" opacity="0.3"/>
 </g>
 <g class="book shelf-0 book-g4">
-<rect x="508.5" y="89" width="45" height="151" fill="#7a4a2e"/>
-<rect x="509.5" y="89" width="43" height="2.5" fill="#e8d9b0"/>
-<line x1="511.5" y1="220" x2="550.5" y2="220" stroke="#000" stroke-width="0.5" opacity="0.3"/>
+<rect x="525.1" y="89" width="45" height="151" fill="#7a4a2e"/>
+<rect x="526.1" y="89" width="43" height="2.5" fill="#e8d9b0"/>
+<line x1="528.1" y1="220" x2="567.1" y2="220" stroke="#000" stroke-width="0.5" opacity="0.3"/>
 </g>
 <g class="book shelf-0 book-g1">
-<rect x="555.5" y="89" width="40" height="151" fill="#6b4a2d"/>
-<rect x="556.5" y="89" width="38" height="2.5" fill="#e8d9b0"/>
-<rect x="555.5" y="99" width="40" height="2" fill="#c8a85a" opacity="0.8"/>
+<rect x="572.1" y="89" width="40" height="151" fill="#6b4a2d"/>
+<rect x="573.1" y="89" width="38" height="2.5" fill="#e8d9b0"/>
+<rect x="572.1" y="99" width="40" height="2" fill="#c8a85a" opacity="0.8"/>
 </g>
 <g class="book shelf-0 book-g1">
-<rect x="598.1" y="127" width="49" height="113" fill="#c8a85a"/>
-<rect x="599.1" y="127" width="47" height="2.5" fill="#e8d9b0"/>
-<rect x="598.1" y="165" width="49" height="12" fill="#111" opacity="0.55"/>
+<rect x="614.7" y="127" width="49" height="113" fill="#c8a85a"/>
+<rect x="615.7" y="127" width="47" height="2.5" fill="#e8d9b0"/>
+<rect x="614.7" y="165" width="49" height="12" fill="#111" opacity="0.55"/>
 </g>
 <g class="book shelf-0 book-g1">
-<rect x="648.6" y="71" width="46" height="169" fill="#2d4a2d"/>
-<rect x="649.6" y="71" width="44" height="2.5" fill="#e8d9b0"/>
-<rect x="648.6" y="106" width="46" height="7" fill="#f0e0b8" opacity="0.55"/>
-<line x1="651.6" y1="220" x2="691.6" y2="220" stroke="#000" stroke-width="0.5" opacity="0.3"/>
+<rect x="665.2" y="71" width="46" height="169" fill="#2d4a2d"/>
+<rect x="666.2" y="71" width="44" height="2.5" fill="#e8d9b0"/>
+<rect x="665.2" y="106" width="46" height="7" fill="#f0e0b8" opacity="0.55"/>
+<line x1="668.2" y1="220" x2="708.2" y2="220" stroke="#000" stroke-width="0.5" opacity="0.3"/>
 </g>
 <g class="book shelf-0 book-g5">
-<rect x="696.8" y="59" width="52" height="181" fill="#3a3a3a"/>
-<rect x="697.8" y="59" width="50" height="2.5" fill="#e8d9b0"/>
+<rect x="713.4" y="59" width="52" height="181" fill="#3a3a3a"/>
+<rect x="714.4" y="59" width="50" height="2.5" fill="#e8d9b0"/>
 </g>
 <g class="book shelf-0 book-g2">
-<rect x="750.5" y="35" width="33" height="205" fill="#a85c3a"/>
-<rect x="751.5" y="35" width="31" height="2.5" fill="#e8d9b0"/>
-<rect x="750.5" y="62" width="33" height="14" fill="#f0e0b8" opacity="0.55"/>
+<rect x="767.1" y="35" width="33" height="205" fill="#a85c3a"/>
+<rect x="768.1" y="35" width="31" height="2.5" fill="#e8d9b0"/>
+<rect x="767.1" y="62" width="33" height="14" fill="#f0e0b8" opacity="0.55"/>
 </g>
 <g class="book shelf-0 book-g5">
-<rect x="784.4" y="57" width="44" height="183" fill="#2d4a2d"/>
-<rect x="785.4" y="57" width="42" height="2.5" fill="#e8d9b0"/>
-<rect x="784.4" y="66" width="44" height="2" fill="#c8a85a" opacity="0.8"/>
+<rect x="801.0" y="57" width="44" height="183" fill="#2d4a2d"/>
+<rect x="802.0" y="57" width="42" height="2.5" fill="#e8d9b0"/>
+<rect x="801.0" y="66" width="44" height="2" fill="#c8a85a" opacity="0.8"/>
 </g>
 <g class="book shelf-0 book-g2">
-<rect x="829.1" y="90" width="27" height="150" fill="#1f3a5f"/>
-<rect x="830.1" y="90" width="25" height="2.5" fill="#e8d9b0"/>
-<line x1="832.1" y1="220" x2="853.1" y2="220" stroke="#000" stroke-width="0.5" opacity="0.3"/>
-<rect x="829.1" y="99" width="27" height="2" fill="#c8a85a" opacity="0.8"/>
+<rect x="845.7" y="90" width="27" height="150" fill="#1f3a5f"/>
+<rect x="846.7" y="90" width="25" height="2.5" fill="#e8d9b0"/>
+<line x1="848.7" y1="220" x2="869.7" y2="220" stroke="#000" stroke-width="0.5" opacity="0.3"/>
+<rect x="845.7" y="99" width="27" height="2" fill="#c8a85a" opacity="0.8"/>
 </g>
 <g class="book shelf-0 book-g2">
-<rect x="856.9" y="75" width="45" height="165" fill="#3a3a3a"/>
-<rect x="857.9" y="75" width="43" height="2.5" fill="#e8d9b0"/>
-<rect x="856.9" y="112" width="45" height="12" fill="#f0e0b8" opacity="0.55"/>
-<line x1="859.9" y1="220" x2="898.9" y2="220" stroke="#000" stroke-width="0.5" opacity="0.3"/>
+<rect x="873.5" y="75" width="45" height="165" fill="#3a3a3a"/>
+<rect x="874.5" y="75" width="43" height="2.5" fill="#e8d9b0"/>
+<rect x="873.5" y="112" width="45" height="12" fill="#f0e0b8" opacity="0.55"/>
+<line x1="876.5" y1="220" x2="915.5" y2="220" stroke="#000" stroke-width="0.5" opacity="0.3"/>
 </g>
 <g class="book shelf-0 book-g2">
-<rect x="902.7" y="35" width="30" height="205" fill="#9b7a2d"/>
-<rect x="903.7" y="35" width="28" height="2.5" fill="#e8d9b0"/>
-<rect x="902.7" y="57" width="30" height="12" fill="#f0e0b8" opacity="0.55"/>
-<line x1="905.7" y1="220" x2="929.7" y2="220" stroke="#000" stroke-width="0.5" opacity="0.3"/>
+<rect x="919.3" y="35" width="30" height="205" fill="#9b7a2d"/>
+<rect x="920.3" y="35" width="28" height="2.5" fill="#e8d9b0"/>
+<rect x="919.3" y="57" width="30" height="12" fill="#f0e0b8" opacity="0.55"/>
+<line x1="922.3" y1="220" x2="946.3" y2="220" stroke="#000" stroke-width="0.5" opacity="0.3"/>
 </g>
 <g class="book shelf-0 book-g3">
-<rect x="934.6" y="109" width="51" height="131" fill="#c8a85a"/>
-<rect x="935.6" y="109" width="49" height="2.5" fill="#e8d9b0"/>
+<rect x="951.2" y="109" width="51" height="131" fill="#c8a85a"/>
+<rect x="952.2" y="109" width="49" height="2.5" fill="#e8d9b0"/>
 </g>
 <g class="book shelf-0 book-g2">
-<rect x="987.7" y="71" width="24" height="169" fill="#6b2d2d"/>
-<rect x="988.7" y="71" width="22" height="2.5" fill="#e8d9b0"/>
-<rect x="987.7" y="95" width="24" height="6" fill="#f0e0b8" opacity="0.55"/>
+<rect x="1004.3" y="71" width="24" height="169" fill="#6b2d2d"/>
+<rect x="1005.3" y="71" width="22" height="2.5" fill="#e8d9b0"/>
+<rect x="1004.3" y="95" width="24" height="6" fill="#f0e0b8" opacity="0.55"/>
 </g>
 <g class="book shelf-0 book-g1">
-<rect x="1011.9" y="78" width="31" height="162" fill="#4a2d4a"/>
-<rect x="1012.9" y="78" width="29" height="2.5" fill="#e8d9b0"/>
+<rect x="1028.5" y="78" width="31" height="162" fill="#4a2d4a"/>
+<rect x="1029.5" y="78" width="29" height="2.5" fill="#e8d9b0"/>
 </g>
 <g class="book shelf-0 book-g5">
-<rect x="1105.4" y="55" width="39" height="185" fill="#7a4a2e"/>
-<rect x="1106.4" y="55" width="37" height="2.5" fill="#e8d9b0"/>
+<rect x="1122.0" y="55" width="39" height="185" fill="#7a4a2e"/>
+<rect x="1123.0" y="55" width="37" height="2.5" fill="#e8d9b0"/>
 </g>
 <g class="book shelf-0 book-g0">
-<rect x="1146.9" y="55" width="38" height="185" fill="#8b3a3a"/>
-<rect x="1147.9" y="55" width="36" height="2.5" fill="#e8d9b0"/>
-<rect x="1146.9" y="88" width="38" height="6" fill="#f0e0b8" opacity="0.55"/>
+<rect x="1163.4" y="55" width="38" height="185" fill="#8b3a3a"/>
+<rect x="1164.4" y="55" width="36" height="2.5" fill="#e8d9b0"/>
+<rect x="1163.4" y="88" width="38" height="6" fill="#f0e0b8" opacity="0.55"/>
 </g>
 <g class="book shelf-0 book-g3">
-<rect x="1187.8" y="62" width="45" height="178" fill="#2d4a2d"/>
-<rect x="1188.8" y="62" width="43" height="2.5" fill="#e8d9b0"/>
-<rect x="1187.8" y="96" width="45" height="13" fill="#f0e0b8" opacity="0.55"/>
-<line x1="1190.8" y1="220" x2="1229.8" y2="220" stroke="#000" stroke-width="0.5" opacity="0.3"/>
+<rect x="1204.4" y="62" width="45" height="178" fill="#2d4a2d"/>
+<rect x="1205.4" y="62" width="43" height="2.5" fill="#e8d9b0"/>
+<rect x="1204.4" y="96" width="45" height="13" fill="#f0e0b8" opacity="0.55"/>
+<line x1="1207.4" y1="220" x2="1246.4" y2="220" stroke="#000" stroke-width="0.5" opacity="0.3"/>
 </g>
 <g class="book shelf-0 book-g4">
-<rect x="1234.5" y="123" width="54" height="117" fill="#a85c3a"/>
-<rect x="1235.5" y="123" width="52" height="2.5" fill="#e8d9b0"/>
+<rect x="1251.1" y="123" width="54" height="117" fill="#a85c3a"/>
+<rect x="1252.1" y="123" width="52" height="2.5" fill="#e8d9b0"/>
 </g>
 <g class="book shelf-0 book-g2">
-<rect x="1290.9" y="51" width="29" height="189" fill="#9b7a2d"/>
-<rect x="1291.9" y="51" width="27" height="2.5" fill="#e8d9b0"/>
-<rect x="1290.9" y="75" width="29" height="6" fill="#f0e0b8" opacity="0.55"/>
+<rect x="1307.5" y="51" width="29" height="189" fill="#9b7a2d"/>
+<rect x="1308.5" y="51" width="27" height="2.5" fill="#e8d9b0"/>
+<rect x="1307.5" y="75" width="29" height="6" fill="#f0e0b8" opacity="0.55"/>
 </g>
 <g class="book shelf-0 book-g0">
-<rect x="1320.4" y="45" width="38" height="195" fill="#a85c3a"/>
-<rect x="1321.4" y="45" width="36" height="2.5" fill="#e8d9b0"/>
-<rect x="1320.4" y="81" width="38" height="9" fill="#f0e0b8" opacity="0.55"/>
-<line x1="1323.4" y1="220" x2="1355.4" y2="220" stroke="#000" stroke-width="0.5" opacity="0.3"/>
+<rect x="1337.0" y="45" width="38" height="195" fill="#a85c3a"/>
+<rect x="1338.0" y="45" width="36" height="2.5" fill="#e8d9b0"/>
+<rect x="1337.0" y="81" width="38" height="9" fill="#f0e0b8" opacity="0.55"/>
+<line x1="1340.0" y1="220" x2="1372.0" y2="220" stroke="#000" stroke-width="0.5" opacity="0.3"/>
 </g>
 <g class="book shelf-0 book-g3">
-<rect x="1360.2" y="36" width="51" height="204" fill="#4a2d4a"/>
-<rect x="1361.2" y="36" width="49" height="2.5" fill="#e8d9b0"/>
-<rect x="1360.2" y="58" width="51" height="10" fill="#f0e0b8" opacity="0.55"/>
+<rect x="1376.8" y="36" width="51" height="204" fill="#4a2d4a"/>
+<rect x="1377.8" y="36" width="49" height="2.5" fill="#e8d9b0"/>
+<rect x="1376.8" y="58" width="51" height="10" fill="#f0e0b8" opacity="0.55"/>
 </g>
 <g class="book shelf-0 book-g5">
-<rect x="1411.8" y="122" width="54" height="118" fill="#8b3a3a"/>
-<rect x="1412.8" y="122" width="52" height="2.5" fill="#e8d9b0"/>
-<rect x="1411.8" y="161" width="54" height="8" fill="#f0e0b8" opacity="0.55"/>
+<rect x="1428.4" y="122" width="54" height="118" fill="#8b3a3a"/>
+<rect x="1429.4" y="122" width="52" height="2.5" fill="#e8d9b0"/>
+<rect x="1428.4" y="161" width="54" height="8" fill="#f0e0b8" opacity="0.55"/>
 </g>
 <g class="book shelf-0 book-g2">
-<rect x="1467.9" y="48" width="53" height="192" fill="#3a5f3a"/>
-<rect x="1468.9" y="48" width="51" height="2.5" fill="#e8d9b0"/>
-<rect x="1467.9" y="76" width="53" height="11" fill="#f0e0b8" opacity="0.55"/>
+<rect x="1484.5" y="48" width="53" height="192" fill="#3a5f3a"/>
+<rect x="1485.5" y="48" width="51" height="2.5" fill="#e8d9b0"/>
+<rect x="1484.5" y="76" width="53" height="11" fill="#f0e0b8" opacity="0.55"/>
 </g>
 <g class="book shelf-0 book-g2">
-<rect x="1562.0" y="130" width="27" height="110" fill="#3a3a3a"/>
-<rect x="1563.0" y="130" width="25" height="2.5" fill="#e8d9b0"/>
-<rect x="1562.0" y="140" width="27" height="2" fill="#c8a85a" opacity="0.8"/>
+<rect x="1578.6" y="130" width="27" height="110" fill="#3a3a3a"/>
+<rect x="1579.6" y="130" width="25" height="2.5" fill="#e8d9b0"/>
+<rect x="1578.6" y="140" width="27" height="2" fill="#c8a85a" opacity="0.8"/>
 </g>
 <g class="book shelf-0 book-g0">
-<rect x="1591.8" y="105" width="43" height="135" fill="#a85c3a"/>
-<rect x="1592.8" y="105" width="41" height="2.5" fill="#e8d9b0"/>
-<rect x="1591.8" y="136" width="43" height="8" fill="#f0e0b8" opacity="0.55"/>
+<rect x="1608.4" y="105" width="43" height="135" fill="#a85c3a"/>
+<rect x="1609.4" y="105" width="41" height="2.5" fill="#e8d9b0"/>
+<rect x="1608.4" y="136" width="43" height="8" fill="#f0e0b8" opacity="0.55"/>
 </g>
 <g class="book shelf-0 book-g2">
-<rect x="1703.3" y="105" width="41" height="135" fill="#6b2d2d"/>
-<rect x="1704.3" y="105" width="39" height="2.5" fill="#e8d9b0"/>
-<rect x="1703.3" y="145" width="41" height="8" fill="#f0e0b8" opacity="0.55"/>
+<rect x="1719.9" y="105" width="41" height="135" fill="#6b2d2d"/>
+<rect x="1720.9" y="105" width="39" height="2.5" fill="#e8d9b0"/>
+<rect x="1719.9" y="145" width="41" height="8" fill="#f0e0b8" opacity="0.55"/>
 </g>
 <g class="book shelf-0 book-g1">
-<rect x="1744.8" y="125" width="48" height="115" fill="#3a5f3a"/>
-<rect x="1745.8" y="125" width="46" height="2.5" fill="#e8d9b0"/>
-<rect x="1744.8" y="153" width="48" height="10" fill="#f0e0b8" opacity="0.55"/>
+<rect x="1761.4" y="125" width="48" height="115" fill="#3a5f3a"/>
+<rect x="1762.4" y="125" width="46" height="2.5" fill="#e8d9b0"/>
+<rect x="1761.4" y="153" width="48" height="10" fill="#f0e0b8" opacity="0.55"/>
 </g>
 <g class="book shelf-0 book-g5">
-<rect x="1795.3" y="104" width="49" height="136" fill="#3a3a3a"/>
-<rect x="1796.3" y="104" width="47" height="2.5" fill="#e8d9b0"/>
-<rect x="1795.3" y="132" width="49" height="11" fill="#f0e0b8" opacity="0.55"/>
-<line x1="1798.3" y1="220" x2="1841.3" y2="220" stroke="#000" stroke-width="0.5" opacity="0.3"/>
-<rect x="1795.3" y="113" width="49" height="2" fill="#c8a85a" opacity="0.8"/>
+<rect x="1811.9" y="104" width="49" height="136" fill="#3a3a3a"/>
+<rect x="1812.9" y="104" width="47" height="2.5" fill="#e8d9b0"/>
+<rect x="1811.9" y="132" width="49" height="11" fill="#f0e0b8" opacity="0.55"/>
+<line x1="1814.9" y1="220" x2="1857.9" y2="220" stroke="#000" stroke-width="0.5" opacity="0.3"/>
+<rect x="1811.9" y="113" width="49" height="2" fill="#c8a85a" opacity="0.8"/>
 </g>
 <g class="book shelf-1 book-g3">
 <rect x="175.5" y="290" width="34" height="150" fill="#c8a85a"/>
@@ -286,219 +286,203 @@
 <rect x="787.0" y="282" width="33" height="2.5" fill="#e8d9b0"/>
 <line x1="789.0" y1="420" x2="818.0" y2="420" stroke="#000" stroke-width="0.5" opacity="0.3"/>
 </g>
-<g class="book shelf-1 book-g4">
-<rect x="875.1" y="252" width="47" height="188" fill="#2c4a6b"/>
-<rect x="876.1" y="252" width="45" height="2.5" fill="#e8d9b0"/>
-<rect x="875.1" y="279" width="47" height="12" fill="#f0e0b8" opacity="0.55"/>
+<a href="/books/gone-with-the-wind" target="_top" class="activated-book">
+  <g class="book activated shelf-1 book-g1">
+    <rect class="spine" x="905.0" y="260" width="44" height="180" fill="#8b4a2d"/>
+    <rect x="906.0" y="260" width="42" height="2.5" fill="#e8d9b0"/>
+    <rect x="908.0" y="266" width="38" height="1.5" fill="#c8a85a" opacity="0.85"/>
+    <rect x="908.0" y="432" width="38" height="1.5" fill="#c8a85a" opacity="0.85"/>
+    <text x="927.0" y="350.0" transform="rotate(90 927.0 350.0)" text-anchor="middle" dominant-baseline="middle" font-family="IM Fell English SC, IM Fell English, serif" font-size="11" letter-spacing="1.5" fill="#f0e0b8">Gone with the Wind</text>
+  </g>
+</a>
+<g class="book shelf-1 book-g3">
+<rect x="954.4" y="272" width="48" height="168" fill="#d4c4a0"/>
+<rect x="955.4" y="272" width="46" height="2.5" fill="#e8d9b0"/>
+<rect x="954.4" y="285" width="48" height="2" fill="#c8a85a" opacity="0.8"/>
+</g>
+<g class="book shelf-1 book-g3">
+<rect x="1004.6" y="255" width="45" height="185" fill="#3a5f3a"/>
+<rect x="1005.6" y="255" width="43" height="2.5" fill="#e8d9b0"/>
+<rect x="1004.6" y="287" width="45" height="7" fill="#f0e0b8" opacity="0.55"/>
+</g>
+<g class="book shelf-1 book-g0">
+<rect x="1052.0" y="275" width="49" height="165" fill="#2c4a6b"/>
+<rect x="1053.0" y="275" width="47" height="2.5" fill="#e8d9b0"/>
+<rect x="1052.0" y="309" width="49" height="8" fill="#f0e0b8" opacity="0.55"/>
+<line x1="1055.0" y1="420" x2="1098.0" y2="420" stroke="#000" stroke-width="0.5" opacity="0.3"/>
+</g>
+<g class="book shelf-1 book-g2">
+<rect x="1103.9" y="268" width="45" height="172" fill="#3a3a3a"/>
+<rect x="1104.9" y="268" width="43" height="2.5" fill="#e8d9b0"/>
+<rect x="1103.9" y="293" width="45" height="12" fill="#f0e0b8" opacity="0.55"/>
 </g>
 <g class="book shelf-1 book-g5">
-<rect x="923.4" y="324" width="28" height="116" fill="#8b3a3a"/>
-<rect x="924.4" y="324" width="26" height="2.5" fill="#e8d9b0"/>
-<rect x="923.4" y="364" width="28" height="7" fill="#f0e0b8" opacity="0.55"/>
+<rect x="1149.6" y="244" width="47" height="196" fill="#8b3a3a"/>
+<rect x="1150.6" y="244" width="45" height="2.5" fill="#e8d9b0"/>
+</g>
+<g class="book shelf-1 book-g0">
+<rect x="1198.3" y="258" width="24" height="182" fill="#8b4a2d"/>
+<rect x="1199.3" y="258" width="22" height="2.5" fill="#e8d9b0"/>
+</g>
+<g class="book shelf-1 book-g5">
+<rect x="1224.5" y="256" width="38" height="184" fill="#9b7a2d"/>
+<rect x="1225.5" y="256" width="36" height="2.5" fill="#e8d9b0"/>
+</g>
+<g class="book shelf-1 book-g0">
+<rect x="1265.5" y="241" width="35" height="199" fill="#2c4a6b"/>
+<rect x="1266.5" y="241" width="33" height="2.5" fill="#e8d9b0"/>
+</g>
+<g class="book shelf-1 book-g0">
+<rect x="1301.0" y="276" width="22" height="164" fill="#3a3a3a"/>
+<rect x="1302.0" y="276" width="20" height="2.5" fill="#e8d9b0"/>
+<rect x="1301.0" y="288" width="22" height="2" fill="#c8a85a" opacity="0.8"/>
+</g>
+<g class="book shelf-1 book-g5">
+<rect x="1323.1" y="236" width="39" height="204" fill="#9b7a2d"/>
+<rect x="1324.1" y="236" width="37" height="2.5" fill="#e8d9b0"/>
+</g>
+<g class="book shelf-1 book-g2">
+<rect x="1363.6" y="322" width="32" height="118" fill="#1f3a5f"/>
+<rect x="1364.6" y="322" width="30" height="2.5" fill="#e8d9b0"/>
+<rect x="1363.6" y="361" width="32" height="10" fill="#f0e0b8" opacity="0.55"/>
+</g>
+<g class="book shelf-1 book-g2">
+<rect x="1397.7" y="246" width="22" height="194" fill="#d4c4a0"/>
+<rect x="1398.7" y="246" width="20" height="2.5" fill="#e8d9b0"/>
+<rect x="1397.7" y="286" width="22" height="10" fill="#111" opacity="0.55"/>
+</g>
+<g class="book shelf-1 book-g2">
+<rect x="1421.5" y="284" width="42" height="156" fill="#7a4a2e"/>
+<rect x="1422.5" y="284" width="40" height="2.5" fill="#e8d9b0"/>
+<rect x="1421.5" y="316" width="42" height="11" fill="#f0e0b8" opacity="0.55"/>
+<rect x="1421.5" y="294" width="42" height="2" fill="#c8a85a" opacity="0.8"/>
+</g>
+<g class="book shelf-1 book-g3">
+<rect x="1463.9" y="270" width="45" height="170" fill="#7a4a2e"/>
+<rect x="1464.9" y="270" width="43" height="2.5" fill="#e8d9b0"/>
+<rect x="1463.9" y="297" width="45" height="14" fill="#f0e0b8" opacity="0.55"/>
+<line x1="1466.9" y1="420" x2="1505.9" y2="420" stroke="#000" stroke-width="0.5" opacity="0.3"/>
+</g>
+<g class="book shelf-1 book-g4">
+<rect x="1509.7" y="277" width="36" height="163" fill="#2d4a2d"/>
+<rect x="1510.7" y="277" width="34" height="2.5" fill="#e8d9b0"/>
+<rect x="1509.7" y="316" width="36" height="10" fill="#f0e0b8" opacity="0.55"/>
+<rect x="1509.7" y="290" width="36" height="2" fill="#c8a85a" opacity="0.8"/>
+</g>
+<g class="book shelf-1 book-g3">
+<rect x="1546.0" y="258" width="49" height="182" fill="#6b2d2d"/>
+<rect x="1547.0" y="258" width="47" height="2.5" fill="#e8d9b0"/>
+<rect x="1546.0" y="283" width="49" height="6" fill="#f0e0b8" opacity="0.55"/>
+</g>
+<g class="book shelf-1 book-g2">
+<rect x="1595.6" y="266" width="41" height="174" fill="#1f3a5f"/>
+<rect x="1596.6" y="266" width="39" height="2.5" fill="#e8d9b0"/>
+<rect x="1595.6" y="308" width="41" height="13" fill="#f0e0b8" opacity="0.55"/>
+</g>
+<g class="book shelf-1 book-g4">
+<rect x="1636.9" y="311" width="25" height="129" fill="#2c4a6b"/>
+<rect x="1637.9" y="311" width="23" height="2.5" fill="#e8d9b0"/>
+</g>
+<g class="book shelf-1 book-g5">
+<rect x="1664.0" y="317" width="46" height="123" fill="#6b2d2d"/>
+<rect x="1665.0" y="317" width="44" height="2.5" fill="#e8d9b0"/>
+<line x1="1667.0" y1="420" x2="1707.0" y2="420" stroke="#000" stroke-width="0.5" opacity="0.3"/>
+</g>
+<g class="book shelf-1 book-g4">
+<rect x="1712.0" y="253" width="49" height="187" fill="#4a2d4a"/>
+<rect x="1713.0" y="253" width="47" height="2.5" fill="#e8d9b0"/>
+<rect x="1712.0" y="280" width="49" height="7" fill="#f0e0b8" opacity="0.55"/>
+</g>
+<g class="book shelf-1 book-g5">
+<rect x="1763.5" y="323" width="45" height="117" fill="#6b4a2d"/>
+<rect x="1764.5" y="323" width="43" height="2.5" fill="#e8d9b0"/>
+<rect x="1763.5" y="356" width="45" height="14" fill="#f0e0b8" opacity="0.55"/>
 </g>
 <g class="book shelf-1 book-g1">
-<rect x="952.4" y="243" width="26" height="197" fill="#d4c4a0"/>
-<rect x="953.4" y="243" width="24" height="2.5" fill="#e8d9b0"/>
-</g>
-<g class="book shelf-1 book-g3">
-<rect x="978.4" y="312" width="30" height="128" fill="#6b4a2d"/>
-<rect x="979.4" y="312" width="28" height="2.5" fill="#e8d9b0"/>
-<rect x="978.4" y="351" width="30" height="11" fill="#f0e0b8" opacity="0.55"/>
-</g>
-<g class="book shelf-1 book-g2">
-<rect x="1009.3" y="241" width="48" height="199" fill="#d4c4a0"/>
-<rect x="1010.3" y="241" width="46" height="2.5" fill="#e8d9b0"/>
-<rect x="1009.3" y="268" width="48" height="10" fill="#111" opacity="0.55"/>
-</g>
-<g class="book shelf-1 book-g5">
-<rect x="1059.5" y="244" width="47" height="196" fill="#8b3a3a"/>
-<rect x="1060.5" y="244" width="45" height="2.5" fill="#e8d9b0"/>
-</g>
-<g class="book shelf-1 book-g0">
-<rect x="1108.2" y="258" width="24" height="182" fill="#8b4a2d"/>
-<rect x="1109.2" y="258" width="22" height="2.5" fill="#e8d9b0"/>
-</g>
-<g class="book shelf-1 book-g5">
-<rect x="1134.4" y="256" width="38" height="184" fill="#9b7a2d"/>
-<rect x="1135.4" y="256" width="36" height="2.5" fill="#e8d9b0"/>
-</g>
-<g class="book shelf-1 book-g0">
-<rect x="1175.4" y="241" width="35" height="199" fill="#2c4a6b"/>
-<rect x="1176.4" y="241" width="33" height="2.5" fill="#e8d9b0"/>
-</g>
-<g class="book shelf-1 book-g0">
-<rect x="1210.8" y="276" width="22" height="164" fill="#3a3a3a"/>
-<rect x="1211.8" y="276" width="20" height="2.5" fill="#e8d9b0"/>
-<rect x="1210.8" y="288" width="22" height="2" fill="#c8a85a" opacity="0.8"/>
-</g>
-<g class="book shelf-1 book-g5">
-<rect x="1233.0" y="236" width="39" height="204" fill="#9b7a2d"/>
-<rect x="1234.0" y="236" width="37" height="2.5" fill="#e8d9b0"/>
-</g>
-<g class="book shelf-1 book-g2">
-<rect x="1273.5" y="322" width="32" height="118" fill="#1f3a5f"/>
-<rect x="1274.5" y="322" width="30" height="2.5" fill="#e8d9b0"/>
-<rect x="1273.5" y="361" width="32" height="10" fill="#f0e0b8" opacity="0.55"/>
-</g>
-<g class="book shelf-1 book-g2">
-<rect x="1307.6" y="246" width="22" height="194" fill="#d4c4a0"/>
-<rect x="1308.6" y="246" width="20" height="2.5" fill="#e8d9b0"/>
-<rect x="1307.6" y="286" width="22" height="10" fill="#111" opacity="0.55"/>
-</g>
-<g class="book shelf-1 book-g2">
-<rect x="1331.4" y="284" width="42" height="156" fill="#7a4a2e"/>
-<rect x="1332.4" y="284" width="40" height="2.5" fill="#e8d9b0"/>
-<rect x="1331.4" y="316" width="42" height="11" fill="#f0e0b8" opacity="0.55"/>
-<rect x="1331.4" y="294" width="42" height="2" fill="#c8a85a" opacity="0.8"/>
-</g>
-<g class="book shelf-1 book-g3">
-<rect x="1373.8" y="270" width="45" height="170" fill="#7a4a2e"/>
-<rect x="1374.8" y="270" width="43" height="2.5" fill="#e8d9b0"/>
-<rect x="1373.8" y="297" width="45" height="14" fill="#f0e0b8" opacity="0.55"/>
-<line x1="1376.8" y1="420" x2="1415.8" y2="420" stroke="#000" stroke-width="0.5" opacity="0.3"/>
-</g>
-<g class="book shelf-1 book-g4">
-<rect x="1419.5" y="277" width="36" height="163" fill="#2d4a2d"/>
-<rect x="1420.5" y="277" width="34" height="2.5" fill="#e8d9b0"/>
-<rect x="1419.5" y="316" width="36" height="10" fill="#f0e0b8" opacity="0.55"/>
-<rect x="1419.5" y="290" width="36" height="2" fill="#c8a85a" opacity="0.8"/>
-</g>
-<g class="book shelf-1 book-g3">
-<rect x="1455.9" y="258" width="49" height="182" fill="#6b2d2d"/>
-<rect x="1456.9" y="258" width="47" height="2.5" fill="#e8d9b0"/>
-<rect x="1455.9" y="283" width="49" height="6" fill="#f0e0b8" opacity="0.55"/>
-</g>
-<g class="book shelf-1 book-g2">
-<rect x="1505.5" y="266" width="41" height="174" fill="#1f3a5f"/>
-<rect x="1506.5" y="266" width="39" height="2.5" fill="#e8d9b0"/>
-<rect x="1505.5" y="308" width="41" height="13" fill="#f0e0b8" opacity="0.55"/>
-</g>
-<g class="book shelf-1 book-g4">
-<rect x="1546.8" y="311" width="25" height="129" fill="#2c4a6b"/>
-<rect x="1547.8" y="311" width="23" height="2.5" fill="#e8d9b0"/>
-</g>
-<g class="book shelf-1 book-g5">
-<rect x="1573.9" y="317" width="46" height="123" fill="#6b2d2d"/>
-<rect x="1574.9" y="317" width="44" height="2.5" fill="#e8d9b0"/>
-<line x1="1576.9" y1="420" x2="1616.9" y2="420" stroke="#000" stroke-width="0.5" opacity="0.3"/>
-</g>
-<g class="book shelf-1 book-g4">
-<rect x="1621.9" y="253" width="49" height="187" fill="#4a2d4a"/>
-<rect x="1622.9" y="253" width="47" height="2.5" fill="#e8d9b0"/>
-<rect x="1621.9" y="280" width="49" height="7" fill="#f0e0b8" opacity="0.55"/>
-</g>
-<g class="book shelf-1 book-g5">
-<rect x="1673.4" y="323" width="45" height="117" fill="#6b4a2d"/>
-<rect x="1674.4" y="323" width="43" height="2.5" fill="#e8d9b0"/>
-<rect x="1673.4" y="356" width="45" height="14" fill="#f0e0b8" opacity="0.55"/>
-</g>
-<g class="book shelf-1 book-g1">
-<rect x="1721.0" y="318" width="46" height="122" fill="#6b4a2d"/>
-<rect x="1722.0" y="318" width="44" height="2.5" fill="#e8d9b0"/>
-</g>
-<g class="book shelf-1 book-g3">
-<rect x="1767.2" y="255" width="29" height="185" fill="#5f5f2d"/>
-<rect x="1768.2" y="255" width="27" height="2.5" fill="#e8d9b0"/>
-</g>
-<g class="book shelf-1 book-g0">
-<rect x="1798.3" y="257" width="29" height="183" fill="#1f3a5f"/>
-<rect x="1799.3" y="257" width="27" height="2.5" fill="#e8d9b0"/>
-<rect x="1798.3" y="287" width="29" height="14" fill="#f0e0b8" opacity="0.55"/>
-</g>
-<g class="book shelf-1 book-g2">
-<rect x="1829.9" y="272" width="40" height="168" fill="#6b4a2d"/>
-<rect x="1830.9" y="272" width="38" height="2.5" fill="#e8d9b0"/>
-<rect x="1829.9" y="307" width="40" height="9" fill="#f0e0b8" opacity="0.55"/>
-<rect x="1829.9" y="285" width="40" height="2" fill="#c8a85a" opacity="0.8"/>
-</g>
-<g class="book shelf-2 book-g1">
-<rect x="133.6" y="529" width="40" height="111" fill="#5f5f2d"/>
-<rect x="134.6" y="529" width="38" height="2.5" fill="#e8d9b0"/>
-<line x1="136.6" y1="620" x2="170.6" y2="620" stroke="#000" stroke-width="0.5" opacity="0.3"/>
+<rect x="1811.1" y="318" width="46" height="122" fill="#6b4a2d"/>
+<rect x="1812.1" y="318" width="44" height="2.5" fill="#e8d9b0"/>
 </g>
 <g class="book shelf-2 book-g2">
-<rect x="208.1" y="483" width="32" height="157" fill="#2d4a2d"/>
-<rect x="209.1" y="483" width="30" height="2.5" fill="#e8d9b0"/>
-<rect x="208.1" y="525" width="32" height="8" fill="#f0e0b8" opacity="0.55"/>
-</g>
-<g class="book shelf-2 book-g1">
-<rect x="241.4" y="462" width="47" height="178" fill="#6b2d2d"/>
-<rect x="242.4" y="462" width="45" height="2.5" fill="#e8d9b0"/>
-<rect x="241.4" y="495" width="47" height="10" fill="#f0e0b8" opacity="0.55"/>
-</g>
-<g class="book shelf-2 book-g5">
-<rect x="289.1" y="527" width="42" height="113" fill="#9b7a2d"/>
-<rect x="290.1" y="527" width="40" height="2.5" fill="#e8d9b0"/>
-</g>
-<g class="book shelf-2 book-g4">
-<rect x="331.3" y="484" width="33" height="156" fill="#c8a85a"/>
-<rect x="332.3" y="484" width="31" height="2.5" fill="#e8d9b0"/>
-<line x1="334.3" y1="620" x2="361.3" y2="620" stroke="#000" stroke-width="0.5" opacity="0.3"/>
-</g>
-<g class="book shelf-2 book-g4">
-<rect x="364.5" y="456" width="49" height="184" fill="#2c4a6b"/>
-<rect x="365.5" y="456" width="47" height="2.5" fill="#e8d9b0"/>
-</g>
-<g class="book shelf-2 book-g3">
-<rect x="415.1" y="469" width="52" height="171" fill="#a85c3a"/>
-<rect x="416.1" y="469" width="50" height="2.5" fill="#e8d9b0"/>
-<rect x="415.1" y="500" width="52" height="10" fill="#f0e0b8" opacity="0.55"/>
-<line x1="418.1" y1="620" x2="464.1" y2="620" stroke="#000" stroke-width="0.5" opacity="0.3"/>
+<rect x="122.8" y="475" width="39" height="165" fill="#6b2d2d"/>
+<rect x="123.8" y="475" width="37" height="2.5" fill="#e8d9b0"/>
 </g>
 <g class="book shelf-2 book-g0">
-<rect x="468.9" y="448" width="26" height="192" fill="#9b7a2d"/>
-<rect x="469.9" y="448" width="24" height="2.5" fill="#e8d9b0"/>
-<rect x="468.9" y="485" width="26" height="11" fill="#f0e0b8" opacity="0.55"/>
-</g>
-<g class="book shelf-2 book-g1">
-<rect x="497.1" y="516" width="45" height="124" fill="#9b7a2d"/>
-<rect x="498.1" y="516" width="43" height="2.5" fill="#e8d9b0"/>
-</g>
-<g class="book shelf-2 book-g4">
-<rect x="1437.0" y="446" width="49" height="194" fill="#7a4a2e"/>
-<rect x="1438.0" y="446" width="47" height="2.5" fill="#e8d9b0"/>
-<rect x="1437.0" y="479" width="49" height="7" fill="#f0e0b8" opacity="0.55"/>
+<rect x="164.6" y="457" width="29" height="183" fill="#1f3a5f"/>
+<rect x="165.6" y="457" width="27" height="2.5" fill="#e8d9b0"/>
+<rect x="164.6" y="487" width="29" height="14" fill="#f0e0b8" opacity="0.55"/>
 </g>
 <g class="book shelf-2 book-g2">
-<rect x="1488.0" y="444" width="34" height="196" fill="#c8a85a"/>
-<rect x="1489.0" y="444" width="32" height="2.5" fill="#e8d9b0"/>
-<rect x="1488.0" y="481" width="34" height="10" fill="#111" opacity="0.55"/>
-</g>
-<g class="book shelf-2 book-g4">
-<rect x="1524.2" y="520" width="54" height="120" fill="#6b2d2d"/>
-<rect x="1525.2" y="520" width="52" height="2.5" fill="#e8d9b0"/>
-<rect x="1524.2" y="547" width="54" height="12" fill="#f0e0b8" opacity="0.55"/>
-</g>
-<g class="book shelf-2 book-g2">
-<rect x="1580.0" y="471" width="52" height="169" fill="#d4c4a0"/>
-<rect x="1581.0" y="471" width="50" height="2.5" fill="#e8d9b0"/>
-</g>
-<g class="book shelf-2 book-g3">
-<rect x="1634.1" y="504" width="50" height="136" fill="#1f3a5f"/>
-<rect x="1635.1" y="504" width="48" height="2.5" fill="#e8d9b0"/>
+<rect x="196.3" y="472" width="40" height="168" fill="#6b4a2d"/>
+<rect x="197.3" y="472" width="38" height="2.5" fill="#e8d9b0"/>
+<rect x="196.3" y="507" width="40" height="9" fill="#f0e0b8" opacity="0.55"/>
+<rect x="196.3" y="485" width="40" height="2" fill="#c8a85a" opacity="0.8"/>
 </g>
 <g class="book shelf-2 book-g0">
-<rect x="1684.3" y="471" width="51" height="169" fill="#1f3a5f"/>
-<rect x="1685.3" y="471" width="49" height="2.5" fill="#e8d9b0"/>
-<rect x="1684.3" y="494" width="51" height="8" fill="#f0e0b8" opacity="0.55"/>
-</g>
-<g class="book shelf-2 book-g4">
-<rect x="1736.2" y="492" width="42" height="148" fill="#2c4a6b"/>
-<rect x="1737.2" y="492" width="40" height="2.5" fill="#e8d9b0"/>
-<rect x="1736.2" y="525" width="42" height="6" fill="#f0e0b8" opacity="0.55"/>
-</g>
-<g class="book shelf-2 book-g5">
-<rect x="1778.7" y="496" width="43" height="144" fill="#1f3a5f"/>
-<rect x="1779.7" y="496" width="41" height="2.5" fill="#e8d9b0"/>
-<rect x="1778.7" y="535" width="43" height="10" fill="#f0e0b8" opacity="0.55"/>
-<rect x="1778.7" y="506" width="43" height="2" fill="#c8a85a" opacity="0.8"/>
+<rect x="237.9" y="450" width="48" height="190" fill="#4a2d4a"/>
+<rect x="238.9" y="450" width="46" height="2.5" fill="#e8d9b0"/>
+<rect x="237.9" y="480" width="48" height="9" fill="#f0e0b8" opacity="0.55"/>
+<rect x="237.9" y="460" width="48" height="2" fill="#c8a85a" opacity="0.8"/>
 </g>
 <g class="book shelf-2 book-g2">
-<rect x="1822.0" y="509" width="39" height="131" fill="#6b2d2d"/>
-<rect x="1823.0" y="509" width="37" height="2.5" fill="#e8d9b0"/>
-<rect x="1822.0" y="547" width="39" height="8" fill="#f0e0b8" opacity="0.55"/>
-<line x1="1825.0" y1="620" x2="1858.0" y2="620" stroke="#000" stroke-width="0.5" opacity="0.3"/>
-<rect x="1822.0" y="517" width="39" height="2" fill="#c8a85a" opacity="0.8"/>
+<rect x="286.2" y="506" width="53" height="134" fill="#2c4a6b"/>
+<rect x="287.2" y="506" width="51" height="2.5" fill="#e8d9b0"/>
+<rect x="286.2" y="534" width="53" height="8" fill="#f0e0b8" opacity="0.55"/>
+</g>
+<g class="book shelf-2 book-g1">
+<rect x="340.5" y="462" width="47" height="178" fill="#6b2d2d"/>
+<rect x="341.5" y="462" width="45" height="2.5" fill="#e8d9b0"/>
+<rect x="340.5" y="495" width="47" height="10" fill="#f0e0b8" opacity="0.55"/>
+</g>
+<g class="book shelf-2 book-g5">
+<rect x="388.2" y="527" width="42" height="113" fill="#9b7a2d"/>
+<rect x="389.2" y="527" width="40" height="2.5" fill="#e8d9b0"/>
+</g>
+<g class="book shelf-2 book-g4">
+<rect x="430.4" y="484" width="33" height="156" fill="#c8a85a"/>
+<rect x="431.4" y="484" width="31" height="2.5" fill="#e8d9b0"/>
+<line x1="433.4" y1="620" x2="460.4" y2="620" stroke="#000" stroke-width="0.5" opacity="0.3"/>
+</g>
+<g class="book shelf-2 book-g4">
+<rect x="463.5" y="456" width="49" height="184" fill="#2c4a6b"/>
+<rect x="464.5" y="456" width="47" height="2.5" fill="#e8d9b0"/>
+</g>
+<g class="book shelf-2 book-g2">
+<rect x="1438.8" y="521" width="46" height="119" fill="#4a2d4a"/>
+<rect x="1439.8" y="521" width="44" height="2.5" fill="#e8d9b0"/>
+<rect x="1438.8" y="559" width="46" height="6" fill="#f0e0b8" opacity="0.55"/>
+</g>
+<g class="book shelf-2 book-g0">
+<rect x="1550.4" y="471" width="41" height="169" fill="#6b4a2d"/>
+<rect x="1551.4" y="471" width="39" height="2.5" fill="#e8d9b0"/>
+</g>
+<g class="book shelf-2 book-g1">
+<rect x="1593.2" y="499" width="29" height="141" fill="#9b7a2d"/>
+<rect x="1594.2" y="499" width="27" height="2.5" fill="#e8d9b0"/>
+<line x1="1596.2" y1="620" x2="1619.2" y2="620" stroke="#000" stroke-width="0.5" opacity="0.3"/>
+<rect x="1593.2" y="512" width="29" height="2" fill="#c8a85a" opacity="0.8"/>
+</g>
+<g class="book shelf-2 book-g4">
+<rect x="1624.7" y="436" width="53" height="204" fill="#8b4a2d"/>
+<rect x="1625.7" y="436" width="51" height="2.5" fill="#e8d9b0"/>
+</g>
+<g class="book shelf-2 book-g5">
+<rect x="1679.4" y="517" width="44" height="123" fill="#7a4a2e"/>
+<rect x="1680.4" y="517" width="42" height="2.5" fill="#e8d9b0"/>
+</g>
+<g class="book shelf-2 book-g3">
+<rect x="1726.3" y="497" width="49" height="143" fill="#1f3a5f"/>
+<rect x="1727.3" y="497" width="47" height="2.5" fill="#e8d9b0"/>
+<rect x="1726.3" y="534" width="49" height="14" fill="#f0e0b8" opacity="0.55"/>
+</g>
+<g class="book shelf-2 book-g5">
+<rect x="1777.0" y="508" width="25" height="132" fill="#3a3a3a"/>
+<rect x="1778.0" y="508" width="23" height="2.5" fill="#e8d9b0"/>
+<rect x="1777.0" y="549" width="25" height="13" fill="#f0e0b8" opacity="0.55"/>
+</g>
+<g class="book shelf-2 book-g3">
+<rect x="1804.3" y="508" width="54" height="132" fill="#6b2d2d"/>
+<rect x="1805.3" y="508" width="52" height="2.5" fill="#e8d9b0"/>
+<rect x="1804.3" y="534" width="54" height="13" fill="#f0e0b8" opacity="0.55"/>
 </g>
 <g class="book nameplate book-g9">
   <rect x="829.0" y="474" width="320" height="170" fill="rgba(0,0,0,0.22)"/>
@@ -599,36 +583,36 @@
 <rect x="1893" y="40" width="16" height="650" fill="var(--frame, #5a3a24)"/>
 <rect x="80" y="40" width="1829" height="16" fill="var(--frame, #5a3a24)"/>
 <rect x="80" y="674" width="1829" height="16" fill="var(--frame, #5a3a24)"/>
-<line x1="83" y1="60" x2="93" y2="73" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="83" y1="100" x2="93" y2="113" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="83" y1="60" x2="93" y2="66" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="83" y1="100" x2="93" y2="115" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
 <line x1="83" y1="140" x2="93" y2="147" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="83" y1="180" x2="93" y2="186" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="83" y1="220" x2="93" y2="233" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="83" y1="260" x2="93" y2="273" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="83" y1="300" x2="93" y2="305" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="83" y1="340" x2="93" y2="351" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="83" y1="380" x2="93" y2="394" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="83" y1="420" x2="93" y2="426" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="83" y1="180" x2="93" y2="185" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="83" y1="220" x2="93" y2="232" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="83" y1="260" x2="93" y2="272" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="83" y1="300" x2="93" y2="307" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="83" y1="340" x2="93" y2="345" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="83" y1="380" x2="93" y2="385" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="83" y1="420" x2="93" y2="435" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
 <line x1="83" y1="460" x2="93" y2="465" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
 <line x1="83" y1="500" x2="93" y2="507" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="83" y1="540" x2="93" y2="546" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="83" y1="580" x2="93" y2="591" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="83" y1="620" x2="93" y2="627" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="83" y1="660" x2="93" y2="666" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="1896" y1="60" x2="1906" y2="73" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="1896" y1="100" x2="1906" y2="109" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="1896" y1="140" x2="1906" y2="148" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="1896" y1="180" x2="1906" y2="187" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="1896" y1="220" x2="1906" y2="229" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="1896" y1="260" x2="1906" y2="268" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="1896" y1="300" x2="1906" y2="312" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="1896" y1="340" x2="1906" y2="355" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="1896" y1="380" x2="1906" y2="395" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="1896" y1="420" x2="1906" y2="426" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="1896" y1="460" x2="1906" y2="475" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="1896" y1="500" x2="1906" y2="508" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="1896" y1="540" x2="1906" y2="549" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="1896" y1="580" x2="1906" y2="593" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="1896" y1="620" x2="1906" y2="635" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
-<line x1="1896" y1="660" x2="1906" y2="669" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="83" y1="540" x2="93" y2="549" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="83" y1="580" x2="93" y2="594" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="83" y1="620" x2="93" y2="630" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="83" y1="660" x2="93" y2="669" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="1896" y1="60" x2="1906" y2="67" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="1896" y1="100" x2="1906" y2="113" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="1896" y1="140" x2="1906" y2="151" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="1896" y1="180" x2="1906" y2="190" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="1896" y1="220" x2="1906" y2="225" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="1896" y1="260" x2="1906" y2="270" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="1896" y1="300" x2="1906" y2="314" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="1896" y1="340" x2="1906" y2="350" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="1896" y1="380" x2="1906" y2="392" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="1896" y1="420" x2="1906" y2="427" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="1896" y1="460" x2="1906" y2="474" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="1896" y1="500" x2="1906" y2="509" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="1896" y1="540" x2="1906" y2="555" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="1896" y1="580" x2="1906" y2="590" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="1896" y1="620" x2="1906" y2="629" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
+<line x1="1896" y1="660" x2="1906" y2="667" stroke="rgba(0,0,0,0.12)" stroke-width="0.6"/>
 </svg>

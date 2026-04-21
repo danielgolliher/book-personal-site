@@ -107,6 +107,14 @@ article.book-page hr {
   border-top: 1px solid rgba(46, 34, 24, 0.25);
   margin: 1.8em 0;
 }
+article.book-page blockquote {
+  margin: 1em 0 1em 0.4em;
+  padding: 0.2em 0 0.2em 1.1em;
+  border-left: 3px solid rgba(46, 34, 24, 0.35);
+  color: #3d342a;
+  font-style: italic;
+}
+article.book-page blockquote p { margin: 0.6em 0; }
 
 ul.contact-list li {
   display: flex;
