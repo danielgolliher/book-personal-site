@@ -3,7 +3,7 @@ title: Gone with the Wind
 slug: gone-with-the-wind
 shelf: middle
 color: "#8b4a2d"
-width: 44
+width: 50
 height: 180
 ---
 
@@ -15,9 +15,9 @@ I first read *Gone with the Wind* soon after I turned 15, and it was the first "
 
 Mitchell's prose was beautiful, and it quickly expanded my own vocabulary and capacity of expression. But beyond that, it was the first book that demonstrated, with civilizational consequence, the importance of standing by one's own estimation of reality—even if one was alone against a crowd. (I wouldn't encounter such a potent form of that message until a few years later when I would read Ayn Rand's *The Fountainhead*.)
 
-This demonstration was achieved early on through a speech delivered by the character Rhett Butler. During a BBQ, among the Southern elite and plantation owners, he explains that the South is doomed to lose the Civil War. He lays out the North's superior industrial, numerical, and cultural superiority in plain language, and he convinces absolutely no one.
+This demonstration was achieved early on through a speech delivered by the character Rhett Butler. During a BBQ, among the Southern elite and plantation owners, he explains that the South is doomed to lose the Civil War. He lays out the North's industrial, numerical, and cultural superiority in plain language, and he convinces absolutely no one.
 
-Now, you can understand why "you are right and have knowledge the world doesn't" might appeal to a 15-year-old boy, but my emotional response to the book wasn't an immature joy at validation of instinctual contrarianism. I felt as though I had met someone deeply worthy of being known. Someone who demonstrated something vitally important about how to live in the world. Because, although Rhett was no saint, he was courageous and determined. He had a moral code of his own, and did not bow to the backward honor culture that surrounded him. Through him, I got my first potent, proto-adult sense of how to let courage give animating strength to knowledge and character. 
+Now, you can understand why "you are right and have knowledge the world doesn't" might appeal to a 15-year-old boy, but my emotional response to the book wasn't an immature joy at validation of instinctual contrarianism. I felt as though I had met someone deeply worthy of being known. Someone who demonstrated something vitally important about how to live in the world. I didn't recognize the emotion as such at the time, but I felt *admiration*. Because, although Rhett was no saint, he was courageous and determined. He had a moral code of his own, and did not bow to the backward honor culture that surrounded him. Through him, I got my first potent, proto-adult sense of how to let courage give animating strength to knowledge and character. 
 
 Here is [his "Arsenal of the North" speech](https://www.algernonproject.com/p/lessons-in-war-and-manufacturing):
 
