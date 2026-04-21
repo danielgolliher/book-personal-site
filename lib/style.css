@@ -17,13 +17,6 @@
 
 /* ############################# global ############################# */
 
-html {
-  /* Prevent horizontal scrolling from any element using 100vw (which
-     on desktop includes the vertical scrollbar's width) or absolutely
-     positioned children that bleed past the viewport. */
-  overflow-x: hidden;
-}
-
 body {
   font-family: "EB Garamond", "Adobe Caslon Pro", Georgia, serif;
   font-size: 22px;
@@ -34,7 +27,6 @@ body {
   margin: 0 auto;
   background-color: var(--white);
   line-height: 1.5;
-  overflow-x: hidden;
 }
 
 h1, h2, h3 { font-family: "IM Fell English", "EB Garamond", serif; }
