@@ -648,6 +648,9 @@ PAGE_TEMPLATE = '''<!doctype html>
     gtag('config', 'G-GLKQCE09RE');
   </script>
   <meta charset="utf-8">
+  <link rel="icon" type="image/png" sizes="32x32" href="/lib/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/lib/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/lib/apple-touch-icon.png">
   <title>{title} &mdash; Daniel Golliher</title>
   <meta name="viewport" content="width=850">
   <meta name="description" content="{title}, a book review by Daniel Golliher.">
