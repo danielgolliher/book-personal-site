@@ -4,10 +4,160 @@
 Books are grouped with a `.book` class plus a shelf-index class so the parent
 page can stagger their fade-in animations (mirroring Matt Bateman's pegboard).
 """
+import glob
+import os
 import random
+import re
 import sys
 
 random.seed(20260420)
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(HERE)
+CONTENT_DIR = os.path.join(ROOT, "content", "books")
+PAGES_ROOT = os.path.join(ROOT, "books")
+
+SHELF_NAMES = {"top": 0, "middle": 1, "bottom": 2}
+
+# ---------------------------------------------------------------------------
+# Markdown + frontmatter parsing (minimal, no external deps).
+# ---------------------------------------------------------------------------
+
+def parse_frontmatter(text):
+    """Return (fm_dict, body_str). Assumes frontmatter starts with '---' on
+    the first line. Returns empty dict if no frontmatter present."""
+    lines = text.splitlines()
+    if not lines or lines[0].strip() != "---":
+        return {}, text
+    fm = {}
+    body_start = None
+    for i in range(1, len(lines)):
+        if lines[i].strip() == "---":
+            body_start = i + 1
+            break
+        if ":" in lines[i]:
+            k, v = lines[i].split(":", 1)
+            v = v.strip()
+            if (v.startswith('"') and v.endswith('"')) or (v.startswith("'") and v.endswith("'")):
+                v = v[1:-1]
+            fm[k.strip()] = v
+    body = "\n".join(lines[body_start:]) if body_start is not None else ""
+    return fm, body
+
+
+def _inline_md(text):
+    # Escape HTML specials first
+    text = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    # Links: [text](url)
+    text = re.sub(r'\[([^\]]+)\]\(([^)]+)\)',
+                  r'<a href="\2" target="_blank" rel="noopener">\1</a>', text)
+    # Bold
+    text = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', text)
+    # Italic
+    text = re.sub(r'(?<!\*)\*([^*]+)\*(?!\*)', r'<em>\1</em>', text)
+    # Inline code
+    text = re.sub(r'`([^`]+)`', r'<code>\1</code>', text)
+    return text
+
+
+def md_to_html(md):
+    """Very small markdown → HTML: headings, paragraphs, unordered lists,
+    horizontal rules, plus inline bold/italic/links/code."""
+    out = []
+    lines = md.splitlines()
+    in_list = False
+    para = []
+
+    def flush_para():
+        if para:
+            out.append("<p>" + _inline_md(" ".join(para)) + "</p>")
+            para.clear()
+
+    for line in lines:
+        s = line.rstrip()
+        if not s.strip():
+            flush_para()
+            if in_list:
+                out.append("</ul>")
+                in_list = False
+            continue
+        if s.strip() == "---":
+            flush_para()
+            if in_list:
+                out.append("</ul>")
+                in_list = False
+            out.append("<hr>")
+            continue
+        m = re.match(r'^(#{1,6})\s+(.+)$', s)
+        if m:
+            flush_para()
+            if in_list:
+                out.append("</ul>")
+                in_list = False
+            lvl = len(m.group(1))
+            out.append(f"<h{lvl}>{_inline_md(m.group(2))}</h{lvl}>")
+            continue
+        m = re.match(r'^[-*]\s+(.+)$', s)
+        if m:
+            flush_para()
+            if not in_list:
+                out.append("<ul>")
+                in_list = True
+            out.append(f"<li>{_inline_md(m.group(1))}</li>")
+            continue
+        para.append(s.strip())
+    flush_para()
+    if in_list:
+        out.append("</ul>")
+    return "\n".join(out)
+
+
+# ---------------------------------------------------------------------------
+# Load activated books.
+# ---------------------------------------------------------------------------
+
+def load_books():
+    books = []
+    if not os.path.isdir(CONTENT_DIR):
+        return books
+    for path in sorted(glob.glob(os.path.join(CONTENT_DIR, "*.md"))):
+        if os.path.basename(path).startswith("_"):
+            continue
+        with open(path) as f:
+            text = f.read()
+        fm, body = parse_frontmatter(text)
+        slug = fm.get("slug", os.path.splitext(os.path.basename(path))[0])
+        shelf_key = fm.get("shelf", "bottom").lower()
+        shelf_idx = SHELF_NAMES.get(shelf_key, 2)
+        if shelf_idx == 0:  # top is reserved for filler
+            shelf_idx = 2
+        books.append({
+            "title": fm.get("title", slug),
+            "slug": slug,
+            "shelf": shelf_idx,
+            "color": fm.get("color", "#6b2d2d"),
+            "width": max(22, min(54, int(fm.get("width", 44)))),
+            "height": max(110, min(205, int(fm.get("height", 180)))),
+            "body": body,
+        })
+    return books
+
+
+def fit_spine_title(title, book_h):
+    """Return (fitted_title, font_size) that should fit vertically on the spine."""
+    avail = book_h - 18  # leave 9px top + bottom padding
+    for fs in (14, 13, 12, 11, 10):
+        char_w = fs * 0.68 + 1.4  # approx for IM Fell English SC
+        max_chars = int(avail / char_w)
+        if len(title) <= max_chars:
+            return title, fs
+    # At smallest font, truncate
+    fs = 10
+    char_w = fs * 0.68 + 1.4
+    max_chars = max(1, int(avail / char_w))
+    if len(title) > max_chars:
+        return title[: max_chars - 1] + "\u2026", fs
+    return title, fs
 
 W, H = 1989, 720
 FRAME_COLOR_VAR = "var(--frame, #5a3a24)"
@@ -53,10 +203,13 @@ out.append('''<style>
     65%  { opacity: 1; transform: translateY(4px); }
     100% { opacity: 1; transform: translateY(0); }
   }
-  a.menu-book { cursor: pointer; }
-  a.menu-book text, g.nameplate text { pointer-events: none; user-select: none; }
-  a.menu-book rect.spine { transition: filter 0.15s; }
-  a.menu-book:hover rect.spine { filter: brightness(1.2); }
+  a.menu-book, a.activated-book { cursor: pointer; }
+  a.menu-book text, g.nameplate text,
+  a.activated-book text { pointer-events: none; user-select: none; }
+  a.menu-book rect.spine,
+  a.activated-book rect.spine { transition: filter 0.15s; }
+  a.menu-book:hover rect.spine,
+  a.activated-book:hover rect.spine { filter: brightness(1.25); }
 </style>''')
 
 # Back wall
@@ -67,11 +220,91 @@ for y in SHELVES:
     out.append(f'<rect x="{FL+THK}" y="{y}" width="{BOOK_RIGHT-BOOK_LEFT+20}" height="{SHELF_THICK}" fill="{SHELF_COLOR_VAR}"/>')
     out.append(f'<rect x="{FL+THK}" y="{y+SHELF_THICK}" width="{BOOK_RIGHT-BOOK_LEFT+20}" height="3" fill="rgba(0,0,0,0.18)"/>')
 
+# Load activated books from content/books/*.md and reserve shelf slots
+# BEFORE the random-book loop, so the random books flow around them.
+activated_books = load_books()
+
+reservations = {0: [], 1: [], 2: []}  # shelf_idx -> list of (x, book_dict)
+BUFFER = 14  # min gap between reserved and surrounding books
+
+for book in activated_books:
+    s_idx = book["shelf"]
+    bw = book["width"]
+    placed = False
+    for _attempt in range(300):
+        x_try = random.randint(BOOK_LEFT + 20, BOOK_RIGHT - bw - 20)
+        # Skip the cutout (bottom-shelf niche).
+        if s_idx == CUTOUT_SHELF and x_try < CUTOUT_X2 + BUFFER and x_try + bw > CUTOUT_X1 - BUFFER:
+            continue
+        # Avoid overlapping existing reservations on the same shelf.
+        collides = False
+        for (rx, rbook) in reservations[s_idx]:
+            rbw = rbook["width"]
+            if x_try < rx + rbw + BUFFER and x_try + bw + BUFFER > rx:
+                collides = True
+                break
+        if not collides:
+            reservations[s_idx].append((x_try, book))
+            placed = True
+            break
+    if not placed:
+        print(f"WARNING: no room for activated book {book['slug']!r} on shelf {s_idx}", file=sys.stderr)
+
+for s in reservations:
+    reservations[s].sort(key=lambda r: r[0])
+
+
+def emit_activated_book(x, shelf_y, book):
+    """Append SVG for an activated book (wrapped in <a> with spine title)."""
+    bw = book["width"]
+    bh = book["height"]
+    color = book["color"]
+    slug = book["slug"]
+    title = book["title"]
+    y_top = shelf_y - bh
+    group = random.randint(0, 5)
+    text_fill = "#111" if color.lower() in LIGHT_COLORS else "#f0e0b8"
+    fitted_title, font_size = fit_spine_title(title, bh)
+    cx = x + bw / 2
+    cy = y_top + bh / 2
+
+    out.append(f'<a href="/books/{slug}" target="_top" class="activated-book">')
+    out.append(f'  <g class="book activated shelf-{book["shelf"]} book-g{group}">')
+    out.append(f'    <rect class="spine" x="{x:.1f}" y="{y_top}" width="{bw}" height="{bh}" fill="{color}"/>')
+    # top pages peek
+    out.append(f'    <rect x="{x+1:.1f}" y="{y_top}" width="{bw-2}" height="2.5" fill="{PAGE_TOP}"/>')
+    # thin gold rules top + bottom to mark it as a "displayed" book
+    out.append(f'    <rect x="{x+3:.1f}" y="{y_top+6}" width="{bw-6}" height="1.5" fill="#c8a85a" opacity="0.85"/>')
+    out.append(f'    <rect x="{x+3:.1f}" y="{y_top+bh-8}" width="{bw-6}" height="1.5" fill="#c8a85a" opacity="0.85"/>')
+    # vertical title, centered on the spine. +90° = top-to-bottom reading (western convention).
+    out.append(f'    <text x="{cx:.1f}" y="{cy:.1f}" transform="rotate(90 {cx:.1f} {cy:.1f})" '
+               f'text-anchor="middle" dominant-baseline="middle" '
+               f'font-family="IM Fell English SC, IM Fell English, serif" '
+               f'font-size="{font_size}" letter-spacing="1.5" fill="{text_fill}">{fitted_title}</text>')
+    out.append('  </g>')
+    out.append('</a>')
+
+
 # Populate each shelf with books, tagged with shelf-index and a random group.
 book_idx = 0
 for shelf_idx, shelf_y in enumerate(SHELVES):
+    res_list = reservations[shelf_idx]
+    res_iter = iter(res_list)
+    next_res = next(res_iter, None)
+
     x = BOOK_LEFT + random.uniform(10, 40)
     while x < BOOK_RIGHT - 40:
+        # If we've reached the next reservation, place its activated book.
+        if next_res and x + 4 >= next_res[0]:
+            r_x, r_book = next_res
+            if x < r_x:
+                x = r_x  # snap forward to the reserved slot
+            emit_activated_book(r_x, shelf_y, r_book)
+            x = r_x + r_book["width"] + random.uniform(2, 8)
+            next_res = next(res_iter, None)
+            book_idx += 1
+            continue
+
         # Occasional gap (bookend, ornament, breathing room).
         if random.random() < 0.07:
             x += random.uniform(25, 70)
@@ -81,6 +314,13 @@ for shelf_idx, shelf_y in enumerate(SHELVES):
         h = random.randint(110, 205)
         if x + w > BOOK_RIGHT - 10:
             break
+
+        # Don't let a random book spill into the reserved slot.
+        if next_res and x + w + BUFFER > next_res[0]:
+            x = next_res[0] - BUFFER // 2
+            if x + 22 > next_res[0]:
+                x = next_res[0]
+            continue
 
         # Skip the niche on the bottom shelf — reserved for the name plaque.
         if shelf_idx == CUTOUT_SHELF and x < CUTOUT_X2 and x + w > CUTOUT_X1:
@@ -326,3 +566,100 @@ with open(sys.argv[1] if len(sys.argv) > 1 else "shelves.svg", "w") as f:
     f.write("\n".join(out))
 
 print(f"wrote {sys.argv[1] if len(sys.argv) > 1 else 'shelves.svg'} ({book_idx} books)")
+
+# ---------------------------------------------------------------------------
+# Generate a page file at /books/<slug>/index.html for every activated book.
+# The shelves <object> and restock script match the pattern used in
+# writing/index.html and about/index.html (paths adjusted to ../../lib/).
+# ---------------------------------------------------------------------------
+
+PAGE_TEMPLATE = '''<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{title} &mdash; Daniel Golliher</title>
+  <meta name="viewport" content="width=850">
+  <link rel="stylesheet" href="../../lib/style.css">
+</head>
+<body>
+
+<div class="shelves">
+  <object id="shelves" class="shelves" type="image/svg+xml" data="../../lib/shelves.svg"></object>
+  <script>
+    window.populate_shelves = function(shelves) {{
+      var doc = shelves.contentDocument;
+      if (!doc) return;
+      var books = doc.querySelectorAll('g.book');
+      var group_delays = {{}};
+      books.forEach(function(book) {{
+        var group = Array.from(book.classList).find(function(c) {{ return c.indexOf('book-g') === 0; }});
+        var delay;
+        if (group && group_delays[group] === undefined) {{
+          group_delays[group] = Math.random() * 2.5;
+          delay = group_delays[group];
+        }} else if (group) {{
+          delay = group_delays[group] + Math.random() * 0.4;
+        }} else {{
+          delay = Math.random() * 2.5;
+        }}
+        book.style.animation = 'none';
+        void book.getBoundingClientRect();
+        setTimeout(function() {{
+          book.style.opacity = '0';
+          book.style.animation = 'place_book 0.9s ease-out forwards';
+          book.style.animationDelay = delay + 's';
+        }}, 10);
+      }});
+    }};
+
+    document.addEventListener('DOMContentLoaded', function() {{
+      var shelves = document.getElementById('shelves');
+      shelves.addEventListener('load', function() {{
+        var already = sessionStorage.getItem('has_populated_shelves');
+        if (!already) {{
+          populate_shelves(shelves);
+          sessionStorage.setItem('has_populated_shelves', 'true');
+        }} else {{
+          var doc = shelves.contentDocument;
+          if (doc) doc.querySelectorAll('g.book').forEach(function(b) {{ b.style.opacity = '1'; }});
+        }}
+      }});
+      var btn = document.getElementById('restock_shelves');
+      if (btn) btn.addEventListener('click', function(e) {{
+        e.preventDefault();
+        populate_shelves(shelves);
+      }});
+    }});
+  </script>
+</div>
+
+<a href="#" id="restock_shelves" class="restock" title="Restock the shelves">&#10227;&#10294;</a>
+
+<h1 class="sr-only">{title} &mdash; Daniel Golliher</h1>
+
+<article class="book-page">
+  <h1>{title}</h1>
+{content}
+</article>
+
+</body>
+</html>
+'''
+
+for book in activated_books:
+    slug = book["slug"]
+    page_dir = os.path.join(PAGES_ROOT, slug)
+    os.makedirs(page_dir, exist_ok=True)
+    content_html = md_to_html(book["body"])
+    # The first heading in the body is typically the same as the title —
+    # strip it so we don't render two identical h1s in a row.
+    content_html = re.sub(r'^\s*<h1>[^<]*</h1>\s*', '', content_html, count=1)
+    # Indent content lines for readability in output.
+    content_html = "\n".join("  " + line for line in content_html.splitlines())
+    page = PAGE_TEMPLATE.format(
+        title=book["title"].replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"),
+        content=content_html,
+    )
+    with open(os.path.join(page_dir, "index.html"), "w") as f:
+        f.write(page)
+    print(f"wrote books/{slug}/index.html")

@@ -8,10 +8,13 @@
     65%  { opacity: 1; transform: translateY(4px); }
     100% { opacity: 1; transform: translateY(0); }
   }
-  a.menu-book { cursor: pointer; }
-  a.menu-book text, g.nameplate text { pointer-events: none; user-select: none; }
-  a.menu-book rect.spine { transition: filter 0.15s; }
-  a.menu-book:hover rect.spine { filter: brightness(1.2); }
+  a.menu-book, a.activated-book { cursor: pointer; }
+  a.menu-book text, g.nameplate text,
+  a.activated-book text { pointer-events: none; user-select: none; }
+  a.menu-book rect.spine,
+  a.activated-book rect.spine { transition: filter 0.15s; }
+  a.menu-book:hover rect.spine,
+  a.activated-book:hover rect.spine { filter: brightness(1.25); }
 </style>
 <rect x="80" y="40" width="1829" height="650" fill="var(--wall, #f4ecd8)"/>
 <rect x="96" y="240" width="1797" height="10" fill="var(--shelf, #6b4a30)"/>

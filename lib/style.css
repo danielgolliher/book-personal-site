@@ -76,6 +76,38 @@ section h2 {
   margin: 1.4em 0 0.5em;
 }
 
+/* Individual book pages (/books/<slug>/) */
+article.book-page {
+  margin: 1em 0 3em;
+}
+article.book-page h1 {
+  font-family: "IM Fell English", serif;
+  font-size: 34px;
+  color: var(--blue);
+  margin: 0.2em 0 0.6em;
+  letter-spacing: 0.01em;
+}
+article.book-page h2 {
+  font-size: 24px;
+  text-align: left;
+  margin: 1.4em 0 0.5em;
+}
+article.book-page h3 { font-size: 20px; margin: 1.2em 0 0.4em; }
+article.book-page ul { margin: 0.6em 0 1em; padding-left: 1.2em; list-style: disc; }
+article.book-page li { margin-bottom: 4px; }
+article.book-page code {
+  font-family: "Courier New", monospace;
+  background: #ede3c9;
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+article.book-page hr {
+  border: 0;
+  border-top: 1px solid rgba(46, 34, 24, 0.25);
+  margin: 1.8em 0;
+}
+
 ul.contact-list li {
   display: flex;
   align-items: center;
@@ -181,4 +213,11 @@ a.restock:hover {
   ul.writing-list li { margin-bottom: 16px; }
   ul.writing-list .icon { width: 28px; height: 28px; vertical-align: -7px; margin-right: 12px; }
   a.restock { width: 48px; height: 34px; font-size: 22px; line-height: 30px; }
+
+  /* Zoom the shelves slightly on mobile so the nameplate and menu books
+     read larger. Everything scales uniformly; boroughs/flag at the edges
+     of the visible slice clip a little more. */
+  object.shelves {
+    transform: translate(-50%) scale(1.1);
+  }
 }
