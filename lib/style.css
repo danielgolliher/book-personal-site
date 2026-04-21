@@ -155,6 +155,31 @@ footer.flourish .flourish-boroughs {
   opacity: 0.9;
 }
 
+/* Small curios shelf sitting below the flourish, full-bleed like the top shelves */
+.curios-shelf {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-top: 2em;
+  margin-bottom: 0;
+  height: 200px;
+  overflow: hidden;
+}
+.curios-shelf > svg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1989px;
+  height: 200px;
+  display: block;
+}
+@media screen and (max-width: 860px) {
+  .curios-shelf > svg {
+    transform: translateX(-50%) scale(1.1);
+  }
+}
+
 ul.contact-list li {
   display: flex;
   align-items: center;
