@@ -24,7 +24,7 @@ body {
   color: var(--black);
   width: 725px;
   padding: 0 50px;
-  margin: 740px auto 0;
+  margin: 590px auto 0;
   background-color: var(--white);
   line-height: 1.5;
 }
@@ -76,6 +76,32 @@ section h2 {
   margin: 1.4em 0 0.5em;
 }
 
+ul.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+ul.contact-list .icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: var(--blue);
+}
+
+ul.writing-list li {
+  margin-bottom: 10px;
+}
+
+ul.writing-list .icon {
+  width: 18px;
+  height: 18px;
+  color: var(--blue);
+  vertical-align: -4px;
+  margin-right: 8px;
+}
+
 hr {
   border: none;
   height: 1px;
@@ -90,7 +116,7 @@ div.shelves {
   top: 0;
   left: 0;
   z-index: -10;
-  height: 720px;
+  height: 570px;
   width: 100%;
   overflow: hidden;
 }
@@ -98,7 +124,7 @@ div.shelves {
 object.shelves {
   position: absolute;
   display: block;
-  top: 0;
+  top: -150px;
   left: 50%;
   transform: translate(-50%);
   width: var(--svg-width);
