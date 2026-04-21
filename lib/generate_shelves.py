@@ -641,6 +641,18 @@ PAGE_TEMPLATE = '''<!doctype html>
   <meta charset="utf-8">
   <title>{title} &mdash; Daniel Golliher</title>
   <meta name="viewport" content="width=850">
+  <meta name="description" content="{title}, a book review by Daniel Golliher.">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Daniel Golliher">
+  <meta property="og:title" content="{title} — Daniel Golliher">
+  <meta property="og:description" content="A book review by Daniel Golliher.">
+  <meta property="og:image" content="https://www.danielgolliher.com/lib/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{title} — Daniel Golliher">
+  <meta name="twitter:description" content="A book review by Daniel Golliher.">
+  <meta name="twitter:image" content="https://www.danielgolliher.com/lib/og-image.png">
   <link rel="stylesheet" href="../../lib/style.css">
 </head>
 <body>
