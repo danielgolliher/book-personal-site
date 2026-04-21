@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Daniel Golliher</title>
+  <meta name="viewport" content="width=850">
+  <link rel="stylesheet" href="lib/style.css">
+</head>
+<body>
+
+<div class="shelves">
+  <object id="shelves" class="shelves" type="image/svg+xml" data="lib/shelves.svg"></object>
+  <script>
+    window.populate_shelves = function(shelves) {
+      var doc = shelves.contentDocument;
+      if (!doc) return;
+      var books = doc.querySelectorAll('g.book');
+      var group_delays = {};
+      books.forEach(function(book) {
+        var group = Array.from(book.classList).find(c => c.startsWith('book-g'));
+        var delay;
+        if (group && group_delays[group] === undefined) {
+          group_delays[group] = Math.random() * 2.5;
+          delay = group_delays[group];
+        } else if (group) {
+          delay = group_delays[group] + Math.random() * 0.4;
+        } else {
+          delay = Math.random() * 2.5;
+        }
+        book.style.animation = 'none';
+        void book.getBoundingClientRect();
+        setTimeout(function() {
+          book.style.opacity = '0';
+          book.style.animation = 'place_book 0.9s ease-out forwards';
+          book.style.animationDelay = delay + 's';
+        }, 10);
+      });
+    };
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var shelves = document.getElementById('shelves');
+      shelves.addEventListener('load', function() {
+        var already = sessionStorage.getItem('has_populated_shelves');
+        if (!already) {
+          populate_shelves(shelves);
+          sessionStorage.setItem('has_populated_shelves', 'true');
+        } else {
+          var doc = shelves.contentDocument;
+          if (doc) doc.querySelectorAll('g.book').forEach(function(b) { b.style.opacity = '1'; });
+        }
+      });
+      var btn = document.getElementById('restock_shelves');
+      if (btn) btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        populate_shelves(shelves);
+      });
+    });
+  </script>
+</div>
+
+<a href="#" id="restock_shelves" class="restock" title="Restock the shelves">&#10227;&#10294;</a>
+
+<h1 class="sr-only">Daniel Golliher</h1>
+<nav class="sr-only">
+  <a href="./">Home</a>
+  <a href="#writing">Writing</a>
+  <a href="#about">About</a>
+</nav>
+
+<section id="about">
+  <p>
+    I&rsquo;m a government and liberal arts teacher based in New York City.
+    I teach my marquee <em>Foundations of New York</em> class through
+    <a href="https://maximumnewyork.com">Maximum New York</a>, my civics
+    school and Substack. I&rsquo;m also a Cities Fellow at the
+    <a href="https://manhattan.institute">Manhattan Institute</a>, and focus
+    on housing, public order, and the constitutional arrangements of the
+    city and state.
+  </p>
+</section>
+
+<section id="writing">
+  <h2>Most of my writing is contained within my two Substacks</h2>
+  <ul>
+    <li><a href="https://maximumnewyork.com" target="_blank" rel="noopener">Maximum New York</a> &mdash; government, politics, philosophy, and all things NYC
+    <li><a href="#" target="_blank" rel="noopener">Algernon Project</a> &mdash; more personal, but generally everything that doesn&rsquo;t go on the MNY site
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>The best way to reach me is via email or a DM on social media</h2>
+  <ul>
+    <li>Email &mdash; <a href="mailto:daniel@maximumnewyork.com" target="_blank" rel="noopener">daniel (at) maximumnewyork.com</a>
+    <li><a href="https://x.com/danielgolliher" target="_blank" rel="noopener">X / Twitter</a>
+    <li><a href="https://substack.com/@danielgolliher" target="_blank" rel="noopener">Substack</a>
+    <li><a href="https://instagram.com/danielgolliher" target="_blank" rel="noopener">Instagram</a>
+    <li><a href="https://linkedin.com/in/danielgolliher" target="_blank" rel="noopener">LinkedIn</a>
+  </ul>
+</section>
+
+</body>
+</html>

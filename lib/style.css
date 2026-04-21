@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap");
+
+:root {
+  --black: #26221d;
+  --accent: #8b3a3a;        /* oxblood — link */
+  --accent-light: #d8b3b3;  /* faded rose — underline */
+  --blue: #2f4a35;          /* deep library green — heading */
+  --blue-light: #bfd1bf;
+  --white: #f4ecd8;         /* warm cream — paper */
+  --svg-width: 1989px;
+
+  /* shelf theme variables — cross into the SVG via JS (and default here) */
+  --wall: #f4ecd8;
+  --frame: #5a3a24;
+  --shelf: #6b4a30;
+}
+
+/* ############################# global ############################# */
+
+body {
+  font-family: "EB Garamond", "Adobe Caslon Pro", Georgia, serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--black);
+  width: 725px;
+  padding: 0 50px;
+  margin: 740px auto 0;
+  background-color: var(--white);
+  line-height: 1.5;
+}
+
+h1, h2, h3 { font-family: "IM Fell English", "EB Garamond", serif; }
+
+.enable_transition { transition: background-color 0.15s; }
+
+a, a:visited, a:active {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-light);
+}
+a:hover { border-bottom: 3px solid var(--accent); }
+.enable_transition_a { transition: 0.15s; }
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: var(--blue);
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  margin: 0 0 14px;
+}
+
+h2 { font-size: 24px; text-align: center; }
+h3 { font-size: 22px; }
+
+p { margin: 0 0 1em; }
+
+em { font-style: italic; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.4;
+}
+
+li { margin-bottom: 8px; }
+
+section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: left;
+  color: var(--blue);
+  margin: 1.4em 0 0.5em;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: var(--blue-light);
+  margin: 20px 250px 30px;
+}
+
+/* ############################# shelves ############################# */
+
+div.shelves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  height: 720px;
+  width: 100%;
+  overflow: hidden;
+}
+
+object.shelves {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: var(--svg-width);
+}
+
+/* ############################# accessibility ############################# */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Restock button — floats in the top-right corner of the viewport */
+
+a.restock {
+  position: fixed;
+  top: 22px;
+  right: 22px;
+  display: inline-block;
+  border: 2px solid var(--accent-light);
+  border-radius: 10px;
+  padding: 1px 0 0 2px;
+  width: 44px;
+  height: 30px;
+  text-align: center;
+  z-index: 10;
+  background: var(--white);
+  font-size: 20px;
+  line-height: 26px;
+}
+
+a.restock:hover {
+  color: var(--white);
+  background-color: var(--accent);
+  border-color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+}
+
+/* ############################# mobile ############################# */
+
+@media screen and (max-width: 860px) {
+  body, li:before { font-size: 26px; }
+  h2, h3 { font-size: 26px; }
+  a.restock { width: 48px; height: 34px; font-size: 22px; line-height: 30px; }
+}
