@@ -154,10 +154,6 @@ footer.flourish .flourish-boroughs {
   mix-blend-mode: multiply;
   opacity: 0.9;
 }
-footer.flourish .flourish-flag {
-  /* subtle outline to define the flag's white stripes against cream page */
-  outline: 1px solid rgba(46, 34, 24, 0.18);
-}
 
 ul.contact-list li {
   display: flex;
