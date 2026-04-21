@@ -196,15 +196,15 @@ def load_books():
 
 def fit_spine_title(title, book_h):
     """Return (fitted_title, font_size) that should fit vertically on the spine."""
-    avail = book_h - 12  # leave ~6px top + bottom padding
-    for fs in (16, 15, 14, 13, 12, 11):
-        char_w = fs * 0.55 + 1.5  # approx char advance for IM Fell English SC
+    avail = book_h - 18  # leave 9px top + bottom padding
+    for fs in (14, 13, 12, 11, 10):
+        char_w = fs * 0.68 + 1.4  # approx for IM Fell English SC
         max_chars = int(avail / char_w)
         if len(title) <= max_chars:
             return title, fs
     # At smallest font, truncate
-    fs = 11
-    char_w = fs * 0.55 + 1.5
+    fs = 10
+    char_w = fs * 0.68 + 1.4
     max_chars = max(1, int(avail / char_w))
     if len(title) > max_chars:
         return title[: max_chars - 1] + "\u2026", fs
