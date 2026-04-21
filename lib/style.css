@@ -24,7 +24,7 @@ body {
   color: var(--black);
   width: 725px;
   padding: 0 50px;
-  margin: 590px auto 0;
+  margin: 0 auto;
   background-color: var(--white);
   line-height: 1.5;
 }
@@ -112,12 +112,11 @@ hr {
 /* ############################# shelves ############################# */
 
 div.shelves {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -10;
+  position: relative;
   height: 570px;
-  width: 100%;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);   /* break out of body's width to full viewport */
+  margin-bottom: 20px;
   overflow: hidden;
 }
 
